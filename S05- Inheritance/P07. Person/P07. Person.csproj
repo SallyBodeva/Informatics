@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>P05._ClassBoxData</RootNamespace>
+    <RootNamespace>P07._Person</RootNamespace>
   </PropertyGroup>
 
 </Project>
