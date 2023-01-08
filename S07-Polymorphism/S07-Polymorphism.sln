@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01-MathOperations", "P01-MathOperations\P01-MathOperations.csproj", "{B5CAE269-198F-4A30-960D-C209E0D8E24F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02. Animals", "P02. Animals\P02. Animals.csproj", "{8EEB63D0-3BEA-4FC7-8292-E502589A054C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03. Shapes", "P03. Shapes\P03. Shapes.csproj", "{BFC23BF7-95F9-4B84-8166-752941911787}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04. Vehicles", "P04. Vehicles\P04. Vehicles.csproj", "{C51FD9B2-92DA-47AC-959E-4AA5CA2153E8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P05. VehiclesExtension", "P05. VehiclesExtension\P05. VehiclesExtension.csproj", "{20964CF8-68E7-4BD8-A99C-DEB4F7E616FE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P07. WildFarm", "P07. WildFarm\P07. WildFarm.csproj", "{0D3DF61B-ABFA-4483-A711-4A720D66F4F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06-Raiding", "P06-Raiding\P06-Raiding.csproj", "{8A87C531-1860-4469-A7A1-ACB856920A25}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B5CAE269-198F-4A30-960D-C209E0D8E24F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5CAE269-198F-4A30-960D-C209E0D8E24F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5CAE269-198F-4A30-960D-C209E0D8E24F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5CAE269-198F-4A30-960D-C209E0D8E24F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EEB63D0-3BEA-4FC7-8292-E502589A054C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EEB63D0-3BEA-4FC7-8292-E502589A054C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EEB63D0-3BEA-4FC7-8292-E502589A054C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EEB63D0-3BEA-4FC7-8292-E502589A054C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFC23BF7-95F9-4B84-8166-752941911787}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFC23BF7-95F9-4B84-8166-752941911787}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFC23BF7-95F9-4B84-8166-752941911787}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFC23BF7-95F9-4B84-8166-752941911787}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C51FD9B2-92DA-47AC-959E-4AA5CA2153E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C51FD9B2-92DA-47AC-959E-4AA5CA2153E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C51FD9B2-92DA-47AC-959E-4AA5CA2153E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C51FD9B2-92DA-47AC-959E-4AA5CA2153E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20964CF8-68E7-4BD8-A99C-DEB4F7E616FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20964CF8-68E7-4BD8-A99C-DEB4F7E616FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20964CF8-68E7-4BD8-A99C-DEB4F7E616FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20964CF8-68E7-4BD8-A99C-DEB4F7E616FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D3DF61B-ABFA-4483-A711-4A720D66F4F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D3DF61B-ABFA-4483-A711-4A720D66F4F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D3DF61B-ABFA-4483-A711-4A720D66F4F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D3DF61B-ABFA-4483-A711-4A720D66F4F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A87C531-1860-4469-A7A1-ACB856920A25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A87C531-1860-4469-A7A1-ACB856920A25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A87C531-1860-4469-A7A1-ACB856920A25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A87C531-1860-4469-A7A1-ACB856920A25}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0E72893E-E5D6-46B6-8621-1B95FDECC0A5}
+	EndGlobalSection
+EndGlobal
