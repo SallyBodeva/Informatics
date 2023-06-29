@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01-RubberDuckDebugers", "P01-RubberDuckDebugers\P01-RubberDuckDebugers.csproj", "{1F6800FB-F5ED-45ED-A1B2-829A4CA49E5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03-ClothingMagazine", "P03-ClothingMagazine\P03-ClothingMagazine.csproj", "{91CE1E8B-4FD7-4F56-A302-1287A119068D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F6800FB-F5ED-45ED-A1B2-829A4CA49E5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F6800FB-F5ED-45ED-A1B2-829A4CA49E5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F6800FB-F5ED-45ED-A1B2-829A4CA49E5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F6800FB-F5ED-45ED-A1B2-829A4CA49E5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91CE1E8B-4FD7-4F56-A302-1287A119068D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91CE1E8B-4FD7-4F56-A302-1287A119068D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91CE1E8B-4FD7-4F56-A302-1287A119068D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91CE1E8B-4FD7-4F56-A302-1287A119068D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BA38A868-E68A-478D-9DFA-57C5C3644479}
+	EndGlobalSection
+EndGlobal
