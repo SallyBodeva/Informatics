@@ -12,7 +12,7 @@ namespace P02_RobotService
         private int batteryLevel;
         private int batteryCapacity;
         private int convertionCapacityIndex;
-        private IReadOnlyCollection<int> interfaceStandards;
+        private List<int> interfaceStandards;
 
         public Robot(string model, int batteryCapacity, int convertionCapacityIndex)
         {
@@ -20,6 +20,7 @@ namespace P02_RobotService
             this.BatteryCapacity = batteryCapacity;
             this.BatteryLevel = this.BatteryCapacity;
             this.ConvertionCapacityIndex = convertionCapacityIndex;
+            this.interfaceStandards = new List<int>();
         }
 
         public string Model
@@ -48,7 +49,7 @@ namespace P02_RobotService
         }
         public int BatteryLevel { get => batteryLevel; set => batteryLevel = value; }
         public int ConvertionCapacityIndex { get => convertionCapacityIndex; set => convertionCapacityIndex = value; }
-        public IReadOnlyCollection<int> InterfaceStandards { get => interfaceStandards; set => interfaceStandards = value; }
+        public List<int> InterfaceStandards { get => interfaceStandards; set => interfaceStandards = value; }
         public void Eating(int minutes)
         {
             int producedEnergy = minutes * this.ConvertionCapacityIndex;

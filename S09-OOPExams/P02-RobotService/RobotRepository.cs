@@ -15,7 +15,7 @@ namespace P02_RobotService
         }
         public IReadOnlyCollection<Robot> Models()
         {
-            return robots;
+            return robots.AsReadOnly();
         }
         public void AddNew(Robot robot)
         {

@@ -1,4 +1,6 @@
-﻿using RobotService.Core.Contracts;
+﻿using P02_RobotService;
+using RobotService.Core.Contracts;
+using RobotService.Models.Contracts;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -60,10 +62,10 @@ namespace P02_RobotService
 
         public string PerformService(string serviceName, int intefaceStandard, int totalPowerNeeded)
         {
-            var neededRobots = robots.Models().Where(x => x.InterfaceStandards.Any(i => i == intefaceStandard)).OrderByDescending(y=>y.BatteryLevel).ToList();
+            var neededRobots = robots.Models().Where(x => x.InterfaceStandards.Any(i => i == intefaceStandard)).OrderByDescending(y => y.BatteryLevel).ToList();
             if (neededRobots.Count == 0)
             {
-                return "Unable to perform service, {intefaceStandard} not supported!";
+                return $"Unable to perform service, {intefaceStandard} not supported!";
             }
             int sumOfBateries = neededRobots.Sum(x => x.BatteryLevel);
             if (sumOfBateries < totalPowerNeeded)
@@ -104,31 +106,34 @@ namespace P02_RobotService
 
         public string RobotRecovery(string model, int minutes)
         {
-            List<Robot> selectedRobots = this.robots.Models().Where(x => x.Model == model && x.BatteryLevel < 50).ToList();
+            List<Robot> selectedRobots = this.robots.Models().Where(x => x.Model == model && x.BatteryLevel * 2 < x.BatteryCapacity).ToList();
+            int feededRobotCount = 0;
+
             foreach (var r in selectedRobots)
             {
                 r.Eating(minutes);
+                feededRobotCount++;
             }
-            return $"Robots fed: {selectedRobots.Count}";
+            return $"Robots fed: {feededRobotCount}";
         }
 
         public string UpgradeRobot(string model, string supplementTypeName)
         {
-            IReadOnlyCollection<Supplement> supps = this.supplements.Models();
-            Supplement s = supps.FirstOrDefault(x => x.GetType().Name == supplementTypeName);
-            int interfaceValue = s.InterfaceStandard;
-            IReadOnlyCollection<Robot> robs = this.robots.Models().Where(x => !x.InterfaceStandards.Contains(interfaceValue)).ToList();
-            List<Robot> neededRobos = robs.Where(x => x.Model == model).ToList();
-            if (neededRobos.Count == 0)
+            Supplement supplement = this.supplements.Models().FirstOrDefault(x => x.GetType().Name == supplementTypeName);
+
+            var selectedModels = this.robots.Models().Where(r => r.Model == model);
+            var stillNotUpgraded = selectedModels.Where(r => r.InterfaceStandards.All(s => s != supplement.InterfaceStandard));
+            var robotForUpgrade = stillNotUpgraded.FirstOrDefault();
+
+            if (robotForUpgrade == null)
             {
                 return $"All {model} are already upgraded!";
+
             }
-            else
-            {
-                neededRobos.First().InstallSupplement(s);
-                this.supplements.RemoveByName(supplementTypeName);
-                return $"{model} is upgraded with {supplementTypeName}.";
-            }
+            robotForUpgrade.InstallSupplement(supplement);
+            this.supplements.RemoveByName(supplementTypeName);
+
+            return $"{model} is upgraded with {supplementTypeName}.";
         }
     }
 }

@@ -15,7 +15,7 @@ namespace P02_RobotService
         }
         public IReadOnlyCollection<Supplement> Models()
         {
-            return supplements;
+            return supplements.AsReadOnly();
         }
         public void AddNew(Supplement supplement)
         {

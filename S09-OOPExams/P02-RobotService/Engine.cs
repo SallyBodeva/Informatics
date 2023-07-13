@@ -25,6 +25,7 @@ namespace P02_RobotService
                     switch (command)
                     {
                         case "Exit":
+                            Console.WriteLine(sb.ToString().TrimEnd());
                             Environment.Exit(0);
                             break;
                         case "CreateRobot":
@@ -53,7 +54,6 @@ namespace P02_RobotService
             {
                 Console.WriteLine(ex.Message);
             }
-            Console.WriteLine(sb.ToString().TrimEnd());
         }
     }
 }
