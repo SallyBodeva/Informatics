@@ -5,7 +5,9 @@ VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01-E-DriveRent", "P01-E-DriveRent\P01-E-DriveRent.csproj", "{01F47507-A35D-48C8-B662-7D71AAD50F24}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02-RobotService", "P02-RobotService\P02-RobotService.csproj", "{38A651CF-75A0-4D9E-8801-CAFBCB5B62AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02-RobotService", "P02-RobotService\P02-RobotService.csproj", "{38A651CF-75A0-4D9E-8801-CAFBCB5B62AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03-UniversityCompetition", "P03-UniversityCompetition\P03-UniversityCompetition.csproj", "{6D95BB6B-7152-45A1-9B1B-919E3CA8C640}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{38A651CF-75A0-4D9E-8801-CAFBCB5B62AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38A651CF-75A0-4D9E-8801-CAFBCB5B62AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38A651CF-75A0-4D9E-8801-CAFBCB5B62AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D95BB6B-7152-45A1-9B1B-919E3CA8C640}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D95BB6B-7152-45A1-9B1B-919E3CA8C640}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D95BB6B-7152-45A1-9B1B-919E3CA8C640}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D95BB6B-7152-45A1-9B1B-919E3CA8C640}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
