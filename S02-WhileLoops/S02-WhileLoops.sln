@@ -23,15 +23,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01. Old Books-Part 2", "P0
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02. Exam Preparation Part 2", "P02. Exam Preparation Part 2\P02. Exam Preparation Part 2.csproj", "{C37BDD02-DFC5-48F8-986B-245D6984195A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03. Vacation Part 2", "P03. Vacation Part 2\P03. Vacation Part 2.csproj", "{7897C348-4D52-4017-AE6A-889C321E643D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03. Vacation Part 2", "P03. Vacation Part 2\P03. Vacation Part 2.csproj", "{7897C348-4D52-4017-AE6A-889C321E643D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04. Walking Part 2", "P04. Walking Part 2\P04. Walking Part 2.csproj", "{D7B6029B-8A43-4CC2-A5F4-CBAE52D5D2EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04. Walking Part 2", "P04. Walking Part 2\P04. Walking Part 2.csproj", "{D7B6029B-8A43-4CC2-A5F4-CBAE52D5D2EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05. Coins Part 2", "P05. Coins Part 2\P05. Coins Part 2.csproj", "{C5FE8303-2718-4A8C-9932-AF8CEA198A71}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P05. Coins Part 2", "P05. Coins Part 2\P05. Coins Part 2.csproj", "{C5FE8303-2718-4A8C-9932-AF8CEA198A71}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06. Cake Part 2", "P06. Cake Part 2\P06. Cake Part 2.csproj", "{4DE05FD2-2120-402F-A0F2-36C5CECA524A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P06. Cake Part 2", "P06. Cake Part 2\P06. Cake Part 2.csproj", "{4DE05FD2-2120-402F-A0F2-36C5CECA524A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P07. Moving Part 2", "P07. Moving Part 2\P07. Moving Part 2.csproj", "{1A5E3962-3D35-47C2-B107-C926B93EEE51}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P07. Moving Part 2", "P07. Moving Part 2\P07. Moving Part 2.csproj", "{1A5E3962-3D35-47C2-B107-C926B93EEE51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P09", "P09\P09.csproj", "{AC803FB8-8D34-45DA-B61B-01B9D299A0CD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +101,10 @@ Global
 		{1A5E3962-3D35-47C2-B107-C926B93EEE51}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A5E3962-3D35-47C2-B107-C926B93EEE51}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A5E3962-3D35-47C2-B107-C926B93EEE51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC803FB8-8D34-45DA-B61B-01B9D299A0CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC803FB8-8D34-45DA-B61B-01B9D299A0CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC803FB8-8D34-45DA-B61B-01B9D299A0CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC803FB8-8D34-45DA-B61B-01B9D299A0CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
