@@ -3,9 +3,33 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01-Monster Extermination", "P01-Monster Extermination\P01-Monster Extermination.csproj", "{A18B8EAD-3389-4FBB-8723-B21F7E14A0C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03-VendingSystem", "P03-VendingSystem\P03-VendingSystem.csproj", "{E9332580-43F7-4540-8B3C-F747093B42EC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "09 August 2023", "09 August 2023", "{DC6B4922-8D19-4936-986F-2763E32C0EEE}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A18B8EAD-3389-4FBB-8723-B21F7E14A0C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A18B8EAD-3389-4FBB-8723-B21F7E14A0C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A18B8EAD-3389-4FBB-8723-B21F7E14A0C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A18B8EAD-3389-4FBB-8723-B21F7E14A0C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9332580-43F7-4540-8B3C-F747093B42EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9332580-43F7-4540-8B3C-F747093B42EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9332580-43F7-4540-8B3C-F747093B42EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9332580-43F7-4540-8B3C-F747093B42EC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A18B8EAD-3389-4FBB-8723-B21F7E14A0C4} = {DC6B4922-8D19-4936-986F-2763E32C0EEE}
+		{E9332580-43F7-4540-8B3C-F747093B42EC} = {DC6B4922-8D19-4936-986F-2763E32C0EEE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {99F5C1AB-0FA7-4A3D-8BB4-C13BDDAA4416}
