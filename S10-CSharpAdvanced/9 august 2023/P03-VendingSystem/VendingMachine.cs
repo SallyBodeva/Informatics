@@ -26,7 +26,7 @@ namespace P03_VendingSystem
         }
         public void AddDrink(Drink drink)
         {
-            if (ButtonCapacity>GetCount)
+            if (ButtonCapacity > GetCount)
             {
                 drinks.Add(drink);
             }
@@ -34,7 +34,7 @@ namespace P03_VendingSystem
         public bool RemoveDrink(string name)
         {
             Drink dr = drinks.FirstOrDefault(x => x.Name == name);
-            if (dr!=null)
+            if (dr != null)
             {
                 drinks.Remove(dr);
                 return true;
