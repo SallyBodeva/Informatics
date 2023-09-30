@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03-LuckyNums", "P03-LuckyN
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04-WordGame", "P04-WordGame\P04-WordGame.csproj", "{C547CBFF-8D90-4C13-B38B-40C77BEABA8F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05-Polydrom", "P05-Polydrom\P05-Polydrom.csproj", "{6129A3AC-A1E6-4A6F-813C-42D54BD3580A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P05-Polydrom", "P05-Polydrom\P05-Polydrom.csproj", "{6129A3AC-A1E6-4A6F-813C-42D54BD3580A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06-ExamResults", "P06-ExamResults\P06-ExamResults.csproj", "{C838C7FF-AC4C-48A2-9471-5D90E58F7E11}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{6129A3AC-A1E6-4A6F-813C-42D54BD3580A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6129A3AC-A1E6-4A6F-813C-42D54BD3580A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6129A3AC-A1E6-4A6F-813C-42D54BD3580A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C838C7FF-AC4C-48A2-9471-5D90E58F7E11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C838C7FF-AC4C-48A2-9471-5D90E58F7E11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C838C7FF-AC4C-48A2-9471-5D90E58F7E11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C838C7FF-AC4C-48A2-9471-5D90E58F7E11}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
