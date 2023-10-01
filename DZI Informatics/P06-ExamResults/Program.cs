@@ -9,51 +9,55 @@ namespace P06_ExamResults
         static void Main()
         {
             int n = int.Parse(Console.ReadLine());
-            int countL = 0;
-            List<double> validPoints = new List<double>();
+            List<double> validResults = ReadValidPoints(n);
+            double min = MinDiff(validResults);
+            int laureatesCount = Laureates(validResults);
+
+            Console.WriteLine($"valid works - {validResults.Count}");
+            Console.WriteLine($"minimal difference - {min:f3} p.");
+            Console.WriteLine($"laureates - {laureatesCount}");
+        }
+        public static List<double> ReadValidPoints(int n)
+        {
+            List<double> valid = new List<double>();
             for (int i = 0; i < n; i++)
             {
                 double result = double.Parse(Console.ReadLine());
-                validPoints = ReadPints(validPoints, result);
-            }
-            double min = MinimalDifference(validPoints);
-            for (int i = 0; i < validPoints.Count; i++)
-            {
-                foreach (double point in FindLaureants(validPoints))
+                if (result>0)
                 {
-                    if (validPoints[i]>=point)
-                    {
-                        countL++;
-                    }
+                    valid.Add(result);
                 }
             }
-            Console.WriteLine($"valid works - {validPoints.Count}");
-            Console.WriteLine($"minimal difference - {min:f3} p.");
-            Console.WriteLine($"laureates - {countL}");
+            return valid;
         }
-        
-        private static List<double> ReadPints(List<double> vP, double result)
+        public static double MinDiff(List<double> list)
         {
-            if (result > 0)
+            double min = double.MaxValue;
+            for (int i = 0; i < list.Count-1; i++)
             {
-                vP.Add(result);
+                if ((list[i + 1] - list[i])<min)
+                {
+                    min = (list[i + 1] - list[i]);
+                }
             }
-
-            return vP.OrderBy(x => x).ToList();
-        }
-        public static double MinimalDifference(List<double> result )
-        {
-            List<double> differences = new List<double>();
-            for (int i = 0; i < result.Count; i++)
+            if ((list[list.Count-1]- list[list.Count - 2])<min)
             {
-                differences.Add(result[i] - result[i + 1]);
+                min = (list[list.Count - 1] - list[list.Count - 2]);
             }
-            return differences.OrderBy(x => x).ToList().FirstOrDefault();
+            return min;
         }
-        public static List<double> FindLaureants(List<double> result)
+        public static int Laureates(List<double> list)
         {
-            return result.OrderByDescending(x => x).Take(3).ToList();
+            List<double> maxResults = list.OrderByDescending(x => x).Distinct().Take(3).ToList();
+            int count = 0;
+            foreach (var item in list)
+            {
+                if (maxResults.Contains(item))
+                {
+                    count++;
+                }
+            }
+            return count;
         }
-        // TO DO
     }
 }

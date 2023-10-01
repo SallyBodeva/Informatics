@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04-WordGame", "P04-WordGam
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P05-Polydrom", "P05-Polydrom\P05-Polydrom.csproj", "{6129A3AC-A1E6-4A6F-813C-42D54BD3580A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06-ExamResults", "P06-ExamResults\P06-ExamResults.csproj", "{C838C7FF-AC4C-48A2-9471-5D90E58F7E11}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P06-ExamResults", "P06-ExamResults\P06-ExamResults.csproj", "{C838C7FF-AC4C-48A2-9471-5D90E58F7E11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P07-Cars", "P07-Cars\P07-Cars.csproj", "{ABAF2A68-9F39-4000-BC0A-515678235353}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{C838C7FF-AC4C-48A2-9471-5D90E58F7E11}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C838C7FF-AC4C-48A2-9471-5D90E58F7E11}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C838C7FF-AC4C-48A2-9471-5D90E58F7E11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABAF2A68-9F39-4000-BC0A-515678235353}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABAF2A68-9F39-4000-BC0A-515678235353}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABAF2A68-9F39-4000-BC0A-515678235353}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABAF2A68-9F39-4000-BC0A-515678235353}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
