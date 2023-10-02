@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P05-Polydrom", "P05-Polydro
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P06-ExamResults", "P06-ExamResults\P06-ExamResults.csproj", "{C838C7FF-AC4C-48A2-9471-5D90E58F7E11}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P07-Cars", "P07-Cars\P07-Cars.csproj", "{ABAF2A68-9F39-4000-BC0A-515678235353}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P07-Cars", "P07-Cars\P07-Cars.csproj", "{ABAF2A68-9F39-4000-BC0A-515678235353}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P08-DividedByItself", "P08-DividedByItself\P08-DividedByItself.csproj", "{DE2297E3-D561-4770-9781-93A9D7D3F6D0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{ABAF2A68-9F39-4000-BC0A-515678235353}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ABAF2A68-9F39-4000-BC0A-515678235353}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ABAF2A68-9F39-4000-BC0A-515678235353}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE2297E3-D561-4770-9781-93A9D7D3F6D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE2297E3-D561-4770-9781-93A9D7D3F6D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE2297E3-D561-4770-9781-93A9D7D3F6D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE2297E3-D561-4770-9781-93A9D7D3F6D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
