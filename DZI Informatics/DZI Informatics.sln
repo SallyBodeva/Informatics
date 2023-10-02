@@ -17,7 +17,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P06-ExamResults", "P06-Exam
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P07-Cars", "P07-Cars\P07-Cars.csproj", "{ABAF2A68-9F39-4000-BC0A-515678235353}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P08-DividedByItself", "P08-DividedByItself\P08-DividedByItself.csproj", "{DE2297E3-D561-4770-9781-93A9D7D3F6D0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P08-DividedByItself", "P08-DividedByItself\P08-DividedByItself.csproj", "{DE2297E3-D561-4770-9781-93A9D7D3F6D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P09-ListOfWords", "P09-ListOfWords\P09-ListOfWords.csproj", "{EFB24F77-2EE5-4C28-97DF-F615494BD1BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P10-Furniture", "P10-Furniture\P10-Furniture.csproj", "{789EC236-3BF3-4806-8D82-B5C1270F8ABF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +61,14 @@ Global
 		{DE2297E3-D561-4770-9781-93A9D7D3F6D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE2297E3-D561-4770-9781-93A9D7D3F6D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE2297E3-D561-4770-9781-93A9D7D3F6D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFB24F77-2EE5-4C28-97DF-F615494BD1BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFB24F77-2EE5-4C28-97DF-F615494BD1BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFB24F77-2EE5-4C28-97DF-F615494BD1BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFB24F77-2EE5-4C28-97DF-F615494BD1BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{789EC236-3BF3-4806-8D82-B5C1270F8ABF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{789EC236-3BF3-4806-8D82-B5C1270F8ABF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{789EC236-3BF3-4806-8D82-B5C1270F8ABF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{789EC236-3BF3-4806-8D82-B5C1270F8ABF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
