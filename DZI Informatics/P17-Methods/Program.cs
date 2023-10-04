@@ -29,6 +29,33 @@ namespace P17_Methods
             }
             return list;
         }
-       
+        public int GetSum(int n)
+        {
+            int sumN = 0;
+            while (n > 0)
+            {
+                sumN += n % 10;
+                n /= 10;
+            }
+            return sumN;
+        }
+        public int Compare(int x, int y)
+        {
+            int sumX = GetSum(x);
+            int sumY = GetSum(y);
+            if (sumX>sumY)
+            {
+                return 1;
+            }
+            else if(sumY<sumX)
+            {
+                return -1;
+            }
+            else
+            {
+                return 0;
+            }
+        }
+    
     }
 }
