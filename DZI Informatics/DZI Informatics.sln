@@ -35,7 +35,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P15-NumbersCount", "P15-Num
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P16-Store", "P16-Store\P16-Store.csproj", "{E2668A28-5F52-4033-9919-BAA9C33AC354}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P17-Methods", "P17-Methods\P17-Methods.csproj", "{2DDD537C-A748-438F-8ECC-49BDC83A45A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P17-Methods", "P17-Methods\P17-Methods.csproj", "{2DDD537C-A748-438F-8ECC-49BDC83A45A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P18-Company", "P18-Company\P18-Company.csproj", "{50133F2D-D199-4846-90D0-19CC5AC873A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -111,6 +113,10 @@ Global
 		{2DDD537C-A748-438F-8ECC-49BDC83A45A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2DDD537C-A748-438F-8ECC-49BDC83A45A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2DDD537C-A748-438F-8ECC-49BDC83A45A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50133F2D-D199-4846-90D0-19CC5AC873A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50133F2D-D199-4846-90D0-19CC5AC873A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50133F2D-D199-4846-90D0-19CC5AC873A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50133F2D-D199-4846-90D0-19CC5AC873A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
