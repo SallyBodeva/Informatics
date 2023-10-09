@@ -8,6 +8,7 @@ namespace P20_SolarSystem
     {
         private string name;
         private double distance;
+        private int classification;
 
         public Star(string name, double distance, int classification, double weight, string constellation)
         {
@@ -34,15 +35,26 @@ namespace P20_SolarSystem
         {
             get => distance; private set
             {
-                if (value<0)
+                if (value < 0)
                 {
                     throw new ArgumentException("Invalid distance...");
                 }
                 distance = value;
             }
         }
-        public int Classification { get; set; }
-        public double Weight { get; set; }
-        public string Constellation { get; set; }
+        public int Classification
+        {
+            get => classification; private set
+            {
+                if (value<1 || value>9)
+                {
+                    throw new ArgumentException("Invalid classification type...");
+                }
+                classification = value;
+            }
+        }
+        public double Weight { get;private  set; }
+        public string Constellation { get; private set; }
+
     }
 }
