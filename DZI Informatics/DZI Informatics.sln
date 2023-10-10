@@ -41,7 +41,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P18-Company", "P18-Company\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P19-Math.Equatuion", "P19-Math.Equatuion\P19-Math.Equatuion.csproj", "{C24B98F7-07DB-462E-B41B-A3C2E6BEA08A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P20-SolarSystem", "P20-SolarSystem\P20-SolarSystem.csproj", "{149FC913-0D77-41F1-9F42-406FC0EE16FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P20-SolarSystem", "P20-SolarSystem\P20-SolarSystem.csproj", "{149FC913-0D77-41F1-9F42-406FC0EE16FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P21-OOPPeople", "P21-OOPPeople\P21-OOPPeople.csproj", "{28E91E66-7EBD-4F03-9653-F55C2749648A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -129,6 +131,10 @@ Global
 		{149FC913-0D77-41F1-9F42-406FC0EE16FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{149FC913-0D77-41F1-9F42-406FC0EE16FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{149FC913-0D77-41F1-9F42-406FC0EE16FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28E91E66-7EBD-4F03-9653-F55C2749648A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28E91E66-7EBD-4F03-9653-F55C2749648A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28E91E66-7EBD-4F03-9653-F55C2749648A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28E91E66-7EBD-4F03-9653-F55C2749648A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
