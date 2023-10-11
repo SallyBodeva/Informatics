@@ -45,7 +45,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P20-SolarSystem", "P20-Sola
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P21-OOPPeople", "P21-OOPPeople\P21-OOPPeople.csproj", "{28E91E66-7EBD-4F03-9653-F55C2749648A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P22-MatrixMethods", "P22-MatrixMethods\P22-MatrixMethods.csproj", "{71762F6A-A9C3-4F80-B9EE-D22DCA703387}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P22-MatrixMethods", "P22-MatrixMethods\P22-MatrixMethods.csproj", "{71762F6A-A9C3-4F80-B9EE-D22DCA703387}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P23-Test", "P23-Test\P23-Test.csproj", "{4C695CEF-9EBE-4E5F-990B-68F630048760}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -141,6 +143,10 @@ Global
 		{71762F6A-A9C3-4F80-B9EE-D22DCA703387}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71762F6A-A9C3-4F80-B9EE-D22DCA703387}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71762F6A-A9C3-4F80-B9EE-D22DCA703387}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C695CEF-9EBE-4E5F-990B-68F630048760}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C695CEF-9EBE-4E5F-990B-68F630048760}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C695CEF-9EBE-4E5F-990B-68F630048760}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C695CEF-9EBE-4E5F-990B-68F630048760}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
