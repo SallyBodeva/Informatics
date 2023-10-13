@@ -47,7 +47,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P21-OOPPeople", "P21-OOPPeo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P22-MatrixMethods", "P22-MatrixMethods\P22-MatrixMethods.csproj", "{71762F6A-A9C3-4F80-B9EE-D22DCA703387}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P23-Test", "P23-Test\P23-Test.csproj", "{4C695CEF-9EBE-4E5F-990B-68F630048760}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P23-Test", "P23-Test\P23-Test.csproj", "{4C695CEF-9EBE-4E5F-990B-68F630048760}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P24-HatShop", "P24-HatShop\P24-HatShop.csproj", "{C60CCCE9-CC2F-4668-BBEF-BD01EA173100}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -147,6 +149,10 @@ Global
 		{4C695CEF-9EBE-4E5F-990B-68F630048760}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C695CEF-9EBE-4E5F-990B-68F630048760}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C695CEF-9EBE-4E5F-990B-68F630048760}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C60CCCE9-CC2F-4668-BBEF-BD01EA173100}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C60CCCE9-CC2F-4668-BBEF-BD01EA173100}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C60CCCE9-CC2F-4668-BBEF-BD01EA173100}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C60CCCE9-CC2F-4668-BBEF-BD01EA173100}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
