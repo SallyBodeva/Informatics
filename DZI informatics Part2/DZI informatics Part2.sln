@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02-PersonalNumsSort", "P02
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03-TripleNums", "P03-TripleNums\P03-TripleNums.csproj", "{0F213021-0553-422C-AC6A-58DE91E18F80}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04-MonthsNames", "P04-MonthsNames\P04-MonthsNames.csproj", "{D4F76DFD-B24B-4E20-8F44-D1120154FDFF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04-MonthsNames", "P04-MonthsNames\P04-MonthsNames.csproj", "{D4F76DFD-B24B-4E20-8F44-D1120154FDFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05-Distances", "P05-Distances\P05-Distances.csproj", "{485F45C2-AC73-44A7-AC3A-76CB7AB9C167}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{D4F76DFD-B24B-4E20-8F44-D1120154FDFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4F76DFD-B24B-4E20-8F44-D1120154FDFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4F76DFD-B24B-4E20-8F44-D1120154FDFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{485F45C2-AC73-44A7-AC3A-76CB7AB9C167}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{485F45C2-AC73-44A7-AC3A-76CB7AB9C167}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{485F45C2-AC73-44A7-AC3A-76CB7AB9C167}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{485F45C2-AC73-44A7-AC3A-76CB7AB9C167}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
