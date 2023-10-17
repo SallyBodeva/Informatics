@@ -13,6 +13,7 @@ namespace P05_Distances
                 double[] nums = Console.ReadLine().Split(" ").Select(double.Parse).ToArray();
                 Console.WriteLine(Distances.Euclidean(nums[0], nums[1], nums[2], nums[3])); 
             }
+            // To do
         }
     }
 }
