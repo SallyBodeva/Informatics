@@ -78,7 +78,8 @@ Create table CreatorsBoardgames
 -- Insert
 Insert into BoardGames(name, YearPublished,Rating,Category_Id,Publisher_Id,PlayersRangeId)
 Values
-('Deep Blue',2019,5.67,1,15,7),
+('Deep Blue
+',2019,5.67,1,15,7),
 ('Paris',2016,9.78,7,1,5),
 ('Catan: Starfarers',2021,9.87,7,13,6),
 ('Bleeding Kansas',2020,3.25,3,7,4),
@@ -102,3 +103,38 @@ where YearPublished>2020;
 --Delete
 Delete from Addresses
 where Town like 'L%';
+
+--Querying 
+-- (1)
+Select name,Rating from Boardgames
+order by YearPublished asc, name desc;
+
+--(2)
+Select bG.id,bG.name,YearPublished,c.name as CategoryName from Boardgames as bG
+join Categories as c on c.id= bG.Category_Id
+where  c.name= 'Strategy Games' or c.name='Wargames'
+order by YearPublished desc;
+
+--(3)
+Select id,CONCAT_WS(' ',FirstName,LastName) as CreatorsName,Email from Creators 
+where id not in (Select CreatorId from CreatorsBoardgames)
+order by CreatorsName;
+
+--(4)
+Select Top(5) b.name, b.Rating,c.name from Boardgames as b
+Left join PlayersRanges as p on p.id=b.PlayersRangeId
+Join Categories as c on c.id= b.Category_Id
+where Rating>7.00 and Rating< 7.5 and b.name like('%a%') or Rating>7.5 and p.PlayersMin=2 and p.PlayersMax=5
+order by b.name asc , b.Rating desc;
+
+--(5)
+Select CONCAT_WS(' ',c.FirstName,LastName) as 'FullName', Email, 
+(Select Top(1) b.Rating from CreatorsBoardgames 
+where CreatorId= c.id
+order by b.Rating desc)
+from Creators as c
+Join CreatorsBoardgames as cb on c.id= cb.CreatorId
+Join Boardgames as b on b.id =cb.BoardgameId
+where Email like'%.com'
+order by FullName;
+
