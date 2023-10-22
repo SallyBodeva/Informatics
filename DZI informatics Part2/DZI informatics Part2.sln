@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03-TripleNums", "P03-Tripl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04-MonthsNames", "P04-MonthsNames\P04-MonthsNames.csproj", "{D4F76DFD-B24B-4E20-8F44-D1120154FDFF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05-Distances", "P05-Distances\P05-Distances.csproj", "{485F45C2-AC73-44A7-AC3A-76CB7AB9C167}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P05-Distances", "P05-Distances\P05-Distances.csproj", "{485F45C2-AC73-44A7-AC3A-76CB7AB9C167}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06-FileManagment", "P06-FileManagment\P06-FileManagment.csproj", "{8963AA1E-9584-4D24-8627-1D63C54683D3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{485F45C2-AC73-44A7-AC3A-76CB7AB9C167}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{485F45C2-AC73-44A7-AC3A-76CB7AB9C167}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{485F45C2-AC73-44A7-AC3A-76CB7AB9C167}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8963AA1E-9584-4D24-8627-1D63C54683D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8963AA1E-9584-4D24-8627-1D63C54683D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8963AA1E-9584-4D24-8627-1D63C54683D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8963AA1E-9584-4D24-8627-1D63C54683D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
