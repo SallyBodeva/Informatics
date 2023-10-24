@@ -8,23 +8,23 @@ namespace P07_HandBallGames_OOP_
 {
     public class TeamRepository
     {
-        private List<Team> models;
+        public  List<Team> Models { get;}
         public void AddModel(Team team)
         {
-            models.Add(team);
+            Models.Add(team);
         }
         public bool RemoveModel(string name)
         {
-            Team t = models.FirstOrDefault(x => x.Name == name);
-            return models.Remove(t);
+            Team t = Models.FirstOrDefault(x => x.Name == name);
+            return Models.Remove(t);
         }
         public bool ExistsModel(string name)
         {
-            return this.models.Any(x => x.Name == name);
+            return this.Models.Any(x => x.Name == name);
         }
         public Team GetModel(string name)
         {
-            return models.FirstOrDefault(x => x.Name == name);
+            return Models.FirstOrDefault(x => x.Name == name);
         }
     }
 }

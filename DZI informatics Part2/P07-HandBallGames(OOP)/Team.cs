@@ -10,10 +10,9 @@ namespace P07_HandBallGames_OOP_
 {
     public class Team
     {
-        private readonly List<Player> players;
         private readonly int overallRating;
         private string name;
-
+        public List<Player>Players { get; set; }
         public Team(string name)
         {
             this.Name = name;
@@ -35,29 +34,29 @@ namespace P07_HandBallGames_OOP_
         {
             get
             {
-                if (players.Count==0)
+                if (Players.Count==0)
                 {
                     return 0;
                 }
-                return players.Average(x=>x.Rating);
+                return Players.Average(x=>x.Rating);
             }
         }
         public void SignContract(Player player)
         {
-            players.Add(player);
+            Players.Add(player);
             player.JoinTeam(this.Name);
         }
         public void Win()
         {
             this.PointsEarned += 3;
-            foreach (var p in players)
+            foreach (var p in Players)
             {
                 p.IncreaseRating();
             }
         }
         public void Lose()
         {
-            foreach (var p in players)
+            foreach (var p in Players)
             {
                 p.DecreaseRating();
             }
@@ -65,7 +64,7 @@ namespace P07_HandBallGames_OOP_
         public void Draw()
         {
             this.PointsEarned += 1;
-            players.FirstOrDefault(x => x.GetType().Name == "GoalKeeper").IncreaseRating();
+            Players.FirstOrDefault(x => x.GetType().Name == "GoalKeeper").IncreaseRating();
         }
         public override string ToString()
         {
@@ -73,9 +72,9 @@ namespace P07_HandBallGames_OOP_
             sb.AppendLine($"Team: {Name} Points: {PointsEarned}");
             sb.AppendLine($"--Overall rating: {OverallRating}");
             sb.Append("--Players: ");
-            if (players.Count!=0)
+            if (Players.Count!=0)
             {
-               players.ForEach(x => sb.Append(x.Name));
+                Players.ForEach(x => sb.Append(x.Name));
             }
             sb.AppendLine("none");
             return sb.ToString().TrimEnd();

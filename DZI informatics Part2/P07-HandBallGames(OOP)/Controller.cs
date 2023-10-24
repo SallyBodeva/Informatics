@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Numerics;
 using System.Text;
 
@@ -68,7 +69,47 @@ namespace P07_HandBallGames_OOP_
         }
         public string NewGame(string firstTeamName, string secondTeamName)
         {
-
+            Team t1 = teams.GetModel(firstTeamName);
+            Team t2 = teams.GetModel(secondTeamName);
+            if (t1.OverallRating>t2.OverallRating)
+            {
+                t1.Win();
+                t2.Lose();
+                return $"Team {t1.Name} wins the game over {t2.Name}!";
+            }
+            else if (t1.OverallRating<t2.OverallRating)
+            {
+                t1.Lose();
+                t2.Win();
+                return $"Team {t2.Name} wins the game over {t1.Name}!";
+            }
+            else
+            {
+                t1.Draw();
+                t2.Draw();
+                return $"The game between {t1.Name} and {t2.Name} ends in a draw!";
+            }
+        }
+        public string PlayerStatistics(string teamName)
+        {
+            StringBuilder sb = new StringBuilder();
+            Team t = teams.GetModel(teamName);
+            sb.AppendLine($"***{t.Name}***");
+            foreach (var player in t.Players.OrderByDescending(x=>x.Rating).ThenBy(x=>x.Name))
+            {
+                sb.AppendLine(player.ToString());
+            }
+            return sb.ToString().TrimEnd();
+        }
+        public string LeagueStandings()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine("***League Standings***");
+            foreach (var team in teams.Models.OrderByDescending(x=>x.OverallRating).ThenBy(x=>x.Name))
+            {
+                sb.AppendLine(team.ToString());
+            }
+            return sb.ToString().TrimEnd();
         }
     }
 }

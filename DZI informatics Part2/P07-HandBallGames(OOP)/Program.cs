@@ -6,7 +6,7 @@ namespace P07_HandBallGames_OOP_
     {
         static void Main()
         {
-
+            Engine e = new Engine();
         }
     }
 }

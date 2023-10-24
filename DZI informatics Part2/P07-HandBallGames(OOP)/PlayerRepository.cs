@@ -8,7 +8,8 @@ namespace P07_HandBallGames_OOP_
 {
     public class PlayerRepository
     {
-        private readonly List<Player> models;
+        public readonly List<Player> models;
+
         public void AddModel(Player player)
         {
             models.Add(player);
