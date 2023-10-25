@@ -20,7 +20,11 @@ namespace P07_HandBallGames_OOP_
         }
         public bool ExistsModel(string name)
         {
-            return this.Models.Any(x => x.Name == name);
+            if (Models.FirstOrDefault(x => x.Name == name) == null)
+            {
+                return false;
+            }
+            return true;
         }
         public Team GetModel(string name)
         {

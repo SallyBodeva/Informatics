@@ -29,7 +29,7 @@ namespace P07_HandBallGames_OOP_
                         sb.AppendLine(controller.NewPlayer(args[1], args[2]));
                         break;
                     case "NewContract":
-                        sb.AppendLine(controller.NewContract(args[1], args[2]));
+                        sb.AppendLine(controller.NewContract($"{args[1]} {args[2]}", args[3]));
                         break;
                     case "NewGame":
                         sb.AppendLine(controller.NewGame(args[1], args[2]));

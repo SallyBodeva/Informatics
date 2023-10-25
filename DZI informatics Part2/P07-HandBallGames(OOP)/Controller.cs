@@ -8,8 +8,8 @@ namespace P07_HandBallGames_OOP_
 {
     public class Controller
     {
-        private PlayerRepository players;
-        private TeamRepository teams;
+        private PlayerRepository players = new PlayerRepository();
+        private TeamRepository teams = new TeamRepository();
 
         public string NewTeam(string name)
         {
