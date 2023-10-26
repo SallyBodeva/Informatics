@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P05-Distances", "P05-Distan
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P06-FileManagment", "P06-FileManagment\P06-FileManagment.csproj", "{8963AA1E-9584-4D24-8627-1D63C54683D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P07-HandBallGames(OOP)", "P07-HandBallGames(OOP)\P07-HandBallGames(OOP).csproj", "{36CE70E4-1CEF-4B46-9219-6560AB7CB908}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P07-HandBallGames(OOP)", "P07-HandBallGames(OOP)\P07-HandBallGames(OOP).csproj", "{36CE70E4-1CEF-4B46-9219-6560AB7CB908}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P08-SortingAlgorithms", "P08-SortingAlgorithms\P08-SortingAlgorithms.csproj", "{46E2FBEE-6E23-4AA6-BD3D-708F4A258E07}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{36CE70E4-1CEF-4B46-9219-6560AB7CB908}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36CE70E4-1CEF-4B46-9219-6560AB7CB908}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{36CE70E4-1CEF-4B46-9219-6560AB7CB908}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46E2FBEE-6E23-4AA6-BD3D-708F4A258E07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46E2FBEE-6E23-4AA6-BD3D-708F4A258E07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46E2FBEE-6E23-4AA6-BD3D-708F4A258E07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46E2FBEE-6E23-4AA6-BD3D-708F4A258E07}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
