@@ -17,7 +17,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P06-FileManagment", "P06-Fi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P07-HandBallGames(OOP)", "P07-HandBallGames(OOP)\P07-HandBallGames(OOP).csproj", "{36CE70E4-1CEF-4B46-9219-6560AB7CB908}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P08-SortingAlgorithms", "P08-SortingAlgorithms\P08-SortingAlgorithms.csproj", "{46E2FBEE-6E23-4AA6-BD3D-708F4A258E07}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P08-SortingAlgorithms", "P08-SortingAlgorithms\P08-SortingAlgorithms.csproj", "{46E2FBEE-6E23-4AA6-BD3D-708F4A258E07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P09-BankAccounts", "P09-BankAccounts\P09-BankAccounts.csproj", "{DE5423FD-E2A1-439F-AA23-6818A94A5F41}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{46E2FBEE-6E23-4AA6-BD3D-708F4A258E07}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46E2FBEE-6E23-4AA6-BD3D-708F4A258E07}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46E2FBEE-6E23-4AA6-BD3D-708F4A258E07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE5423FD-E2A1-439F-AA23-6818A94A5F41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE5423FD-E2A1-439F-AA23-6818A94A5F41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE5423FD-E2A1-439F-AA23-6818A94A5F41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE5423FD-E2A1-439F-AA23-6818A94A5F41}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
