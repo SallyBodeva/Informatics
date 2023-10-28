@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P07-HandBallGames(OOP)", "P
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P08-SortingAlgorithms", "P08-SortingAlgorithms\P08-SortingAlgorithms.csproj", "{46E2FBEE-6E23-4AA6-BD3D-708F4A258E07}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P09-BankAccounts", "P09-BankAccounts\P09-BankAccounts.csproj", "{DE5423FD-E2A1-439F-AA23-6818A94A5F41}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P09-BankAccounts", "P09-BankAccounts\P09-BankAccounts.csproj", "{DE5423FD-E2A1-439F-AA23-6818A94A5F41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P10-FilesAndExtensions", "P10-FilesAndExtensions\P10-FilesAndExtensions.csproj", "{70121322-B4C6-4F10-8158-4EFB900E3196}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{DE5423FD-E2A1-439F-AA23-6818A94A5F41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE5423FD-E2A1-439F-AA23-6818A94A5F41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE5423FD-E2A1-439F-AA23-6818A94A5F41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70121322-B4C6-4F10-8158-4EFB900E3196}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70121322-B4C6-4F10-8158-4EFB900E3196}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70121322-B4C6-4F10-8158-4EFB900E3196}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70121322-B4C6-4F10-8158-4EFB900E3196}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

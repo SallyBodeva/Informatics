@@ -82,6 +82,7 @@ namespace P09_BankAccounts
                         break;
                     case 3:
                         Console.WriteLine("Такса обслужване...");
+                        Thread.Sleep(3000);
                         account.DeductFees();
                         break;
                     case 4:
@@ -111,6 +112,7 @@ namespace P09_BankAccounts
                         break;
                     case 3:
                         Console.WriteLine("Теглене след изтичане на срока...");
+                        Thread.Sleep(3000);
                         account.WithdrawOnMaturity();
                         break;
                     case 4:
