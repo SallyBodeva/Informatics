@@ -1,6 +1,7 @@
 ﻿
 using System;
 using System.Text;
+using System.Threading;
 
 namespace P09_BankAccounts
 {
@@ -9,35 +10,67 @@ namespace P09_BankAccounts
         static void Main()
         {
             StringBuilder sb = Intro();
-            Console.WriteLine(sb.ToString());
-            BankAccount bA= null;
+            Console.Write(sb.ToString());
             int backAcountType = int.Parse(Console.ReadLine());
+            Console.Write($"Въведете начален баланс: ");
+            decimal initialBalance = decimal.Parse(Console.ReadLine());
             switch (backAcountType)
             {
                 case 1:
-                    bA = new SavingsAccount();
+                    SavingsAccount sA = new SavingsAccount() {Balance=initialBalance};
+                    SavingAccountMethods(sA);
                     break;
 
                 case 2:
-                    bA = new CheckingAccount();
+                    CheckingAccount aC = new CheckingAccount() { Balance = initialBalance };
+                    CheckingAccountMethods(aC);
                     break;
 
                 case 3:
-                    bA = new CertificateOfDeposit();
+                    CertificateOfDeposit cD = new CertificateOfDeposit() { Balance = initialBalance };
+                    CertificateOfDepositMethods(cD);
                     break;
-
             }
-            Console.WriteLine(Commands().ToString());
-            Console.Write("Изберете действие: ");
+        }
+        private static void SavingAccountMethods(SavingsAccount account)
+        {
             while (true)
             {
-                int commandType = int.Parse(Console.ReadLine());
-                if (commandType==4)
-                {
-                    Environment.Exit(0);
-                }
+                Console.WriteLine(Commands().ToString());
+                Console.Write("Изберете действие: ");
+                int commandNum = int.Parse(Console.ReadLine());
                 decimal amount = 0;
-                switch (commandType)
+                switch (commandNum)
+                {
+                    case 1:
+                        Console.Write("Въведете сума за внасяне: ");
+                        amount = decimal.Parse(Console.ReadLine());
+                        break;
+                    case 2:
+                        Console.Write("Въведете сума за теглене: ");
+                        amount = decimal.Parse(Console.ReadLine()); ;
+                        break;
+                    case 3:
+                        Console.WriteLine("Изчисляване на лихва...");
+                        Thread.Sleep(3000);
+                        account.CalculateInterest();
+                        break;
+                    case 4:
+                        Console.WriteLine("Благодарим, че използвахте банковия управител!");
+                        Environment.Exit(0);
+                        break;
+                }
+            }
+        }
+        private static void CheckingAccountMethods(CheckingAccount account)
+        {
+            while (true)
+            {
+                Console.WriteLine(Commands().ToString());
+                Console.Write("Изберете действие: ");
+                int commandNum = int.Parse(Console.ReadLine());
+                decimal amount = 0;
+                switch (commandNum)
                 {
                     case 1:
                         Console.Write("Въведете сума за внасяне: ");
@@ -47,9 +80,45 @@ namespace P09_BankAccounts
                         Console.Write("Въведете сума за теглене: ");
                         amount = 200;
                         break;
+                    case 3:
+                        Console.WriteLine("Такса обслужване...");
+                        account.DeductFees();
+                        break;
+                    case 4:
+                        Console.WriteLine("Благодарим, че използвахте банковия управител!");
+                        Environment.Exit(0);
+                        break;
                 }
             }
-            //TO DO.....
+        }
+        private static void CertificateOfDepositMethods(CertificateOfDeposit account)
+        {
+            while (true)
+            {
+                Console.WriteLine(Commands().ToString());
+                Console.Write("Изберете действие: ");
+                int commandNum = int.Parse(Console.ReadLine());
+                decimal amount = 0;
+                switch (commandNum)
+                {
+                    case 1:
+                        Console.Write("Въведете сума за внасяне: ");
+                        amount = decimal.Parse(Console.ReadLine());
+                        break;
+                    case 2:
+                        Console.Write("Въведете сума за теглене: ");
+                        amount = 200;
+                        break;
+                    case 3:
+                        Console.WriteLine("Теглене след изтичане на срока...");
+                        account.WithdrawOnMaturity();
+                        break;
+                    case 4:
+                        Console.WriteLine("Благодарим, че използвахте банковия управител!");
+                        Environment.Exit(0);
+                        break;
+                }
+            }
         }
         private static StringBuilder Commands()
         {
@@ -69,7 +138,7 @@ namespace P09_BankAccounts
             sb.AppendLine("1.Спестовна сметка");
             sb.AppendLine("2.Разплащателна сметка");
             sb.AppendLine("3.Сметка със срок на депозита");
-            sb.Append("Въведете номер на избраната сметка:");
+            sb.Append("Въведете номер на избраната сметка: ");
             return sb;
         }
     }
