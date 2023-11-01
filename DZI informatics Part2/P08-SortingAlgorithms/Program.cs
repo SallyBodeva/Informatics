@@ -7,7 +7,7 @@ namespace P08_SortingAlgorithms
         static void Main()
         {
             int[] example = new int[] { 6, 1, 0, 19, -2 };
-            Console.WriteLine(String.Join(" ",SelectionSort(example)));
+            Console.WriteLine(String.Join(" ",InsertionSort(example)));
         }
 
         public static int[] BubbleSort(int[] array)
@@ -41,6 +41,20 @@ namespace P08_SortingAlgorithms
                     if (array[j] < array[i])
                     {
                         Swap(array, i, j);
+                    }
+                }
+            }
+            return array;
+        }
+        public static int[] InsertionSort(int[] array)
+        {
+            for (int i = 0; i < array.Length; i++)
+            {
+                if (i-1>=0)
+                {
+                    while (array[i] < array[i - 1])
+                    {
+                        Swap(array, i, i - 1);
                     }
                 }
             }
