@@ -21,7 +21,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P08-SortingAlgorithms", "P0
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P09-BankAccounts", "P09-BankAccounts\P09-BankAccounts.csproj", "{DE5423FD-E2A1-439F-AA23-6818A94A5F41}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P10-FilesAndExtensions", "P10-FilesAndExtensions\P10-FilesAndExtensions.csproj", "{70121322-B4C6-4F10-8158-4EFB900E3196}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P10-FilesAndExtensions", "P10-FilesAndExtensions\P10-FilesAndExtensions.csproj", "{70121322-B4C6-4F10-8158-4EFB900E3196}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
