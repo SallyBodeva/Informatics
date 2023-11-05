@@ -27,7 +27,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P11-Odd Lines(FileOperation
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P12-LineNumbers(FileOperations)", "P12-LineNumbers(FileOperations)\P12-LineNumbers(FileOperations).csproj", "{74793A0C-38BC-481A-85D7-53B2AB1C4A3C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P13-CopyBinaryFile(FileOperations)", "P13-CopyBinaryFile(FileOperations)\P13-CopyBinaryFile(FileOperations).csproj", "{605D1338-2645-42A3-9C54-CF11E9ED1AD0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P13-CopyBinaryFile(FileOperations)", "P13-CopyBinaryFile(FileOperations)\P13-CopyBinaryFile(FileOperations).csproj", "{605D1338-2645-42A3-9C54-CF11E9ED1AD0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P14-FishingNet(OOP)", "P14-FishingNet(OOP)\P14-FishingNet(OOP).csproj", "{7F313031-C280-4BDF-AAEF-6990F49F2F42}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{605D1338-2645-42A3-9C54-CF11E9ED1AD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{605D1338-2645-42A3-9C54-CF11E9ED1AD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{605D1338-2645-42A3-9C54-CF11E9ED1AD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F313031-C280-4BDF-AAEF-6990F49F2F42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F313031-C280-4BDF-AAEF-6990F49F2F42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F313031-C280-4BDF-AAEF-6990F49F2F42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F313031-C280-4BDF-AAEF-6990F49F2F42}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
