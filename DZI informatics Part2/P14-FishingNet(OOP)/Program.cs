@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Text.Json;
 
 namespace P14_FishingNet_OOP_
 {
@@ -50,14 +53,6 @@ namespace P14_FishingNet_OOP_
 
             Console.WriteLine("----------------------Report----------------------");
             Console.WriteLine(net.Report());
-            /*
-            Into the cast net:
-            There is a catfish, 105.25 cm. long, and 2100.15 gr. in weight.
-            There is a salmon, 44.25 cm. long, and 941.15 gr. in weight.
-            There is a trout, 38.35 cm. long, and 357.41 gr. in weight.
-            There is a barbel, 21.33 cm. long, and 190.14 gr. in weight.
-            There is a mullet, 15.21 cm. long, and 150.33 gr. in weight.
-            */
 
         }
     }
