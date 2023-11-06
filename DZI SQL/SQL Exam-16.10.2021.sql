@@ -1,5 +1,6 @@
 CREATE DATABASE CigarShop;
 USE CigarShop;
+--DDL
 CREATE TABLE Sizes
 (
 	Id INT PRIMARY KEY IDENTITY,
@@ -76,7 +77,7 @@ CREATE TABLE ClientsCigars
 			FOREIGN KEY (CigarId)
 			REFERENCES Cigars(id)
 );
-
+--INSERT
 INSERT INTO Cigars(Id,CigarName,BrandId,TastId,SizeId,PriceForSingleCigar,ImageURL)
 VALUES
 ('COHIBA ROBUSTO',9,1,5,15.50,'cohiba-robusto-stick_18.jpg'),
@@ -90,3 +91,30 @@ VALUES
 ('Sofia','Bulgaria', '18 Bul. Vasil levski'	,'1000'),
 ('Athens','Greece', '4342 McDonald Avenue'	,'10435'),
 ('Zagreb','Croatia', '4333 Lauren Drive'	,'10000')
+
+--UPDATES
+UPDATE Cigars
+SET PriceForSingleCigar= PriceForSingleCigar*1.2
+WHERE TastId IN (SELECT Id FROM Tastes WHERE TasteType='Spicy');
+
+UPDATE Brands
+SET BrandDescription='New description'
+WHERE BrandDescription IS NULL;
+
+--Queries
+SELECT CigarName,PriceForSingleCigar,ImageURL FROM Cigars
+ORDER BY PriceForSingleCigar, CigarName DESC;
+
+SELECT c.ID,CigarName,PriceForSingleCigar,TasteType,TasteStrength FROM Cigars AS c
+JOIN Tastes AS t on t.Id=c.TastId
+WHERE TasteType='Earthy' OR TasteType='Woody'
+ORDER BY PriceForSingleCigar DESC;
+
+SELECT Id, CONCAT_WS(' ',FirstName,LastName) AS ClientName,Email FROM Clients
+WHERE Id NOT IN (SELECT ClientId FROM ClientsCigars)
+ORDER BY ClientName;
+
+SELECT TOP(5) c.CigarName,c.PriceForSingleCigar,c.ImageURL FROM Cigars AS c
+JOIN Sizes AS s On s.Id=c.SizeId
+WHERE s.Length>=12 AND (c.CigarName LIKE '%ci%' OR  c.PriceForSingleCigar>50) AND s.RingRange >2.55
+ORDER BY c.CigarName,c.PriceForSingleCigar DESC;
