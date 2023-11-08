@@ -33,7 +33,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P14-FishingNet(OOP)", "P14-
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P15-JsonWIthProject14", "P18-JsonWIthProject17\P15-JsonWIthProject14.csproj", "{ED9DFC30-3ED1-4E05-BE75-EDBBD335BF52}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P16-ComparatorsExecises", "P16-ComparatorsExecises\P16-ComparatorsExecises.csproj", "{51310459-E74E-4BE9-9B35-C8F6332C19D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P16-ComparatorsExecises", "P16-ComparatorsExecises\P16-ComparatorsExecises.csproj", "{51310459-E74E-4BE9-9B35-C8F6332C19D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P17-FurnitureOOP", "P17-FurnitureOOP\P17-FurnitureOOP.csproj", "{F14BE27E-7EC5-47A3-92DF-C5FB756D9D20}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +107,10 @@ Global
 		{51310459-E74E-4BE9-9B35-C8F6332C19D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51310459-E74E-4BE9-9B35-C8F6332C19D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51310459-E74E-4BE9-9B35-C8F6332C19D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F14BE27E-7EC5-47A3-92DF-C5FB756D9D20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F14BE27E-7EC5-47A3-92DF-C5FB756D9D20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F14BE27E-7EC5-47A3-92DF-C5FB756D9D20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F14BE27E-7EC5-47A3-92DF-C5FB756D9D20}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
