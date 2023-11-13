@@ -30,6 +30,13 @@ public class ListyIterator<T>:IEnumerable<T>
 	{
 		Console.WriteLine(GetEnumerator().Current);
 	}
+    public void PrintAll()
+    {
+		foreach (var item in collection )
+		{
+			Console.WriteLine(item);
+		}
+    }
     public IEnumerator<T> GetEnumerator()
     {
 		for (int i = 0; i < collection.Count; i++)

@@ -37,6 +37,9 @@ namespace P19_ListyIterator
                     case "Print":
                         list.Print();
                         break;
+                    case "Print all":
+                        list.PrintAll();
+                        break;
                 }
             }
         }
