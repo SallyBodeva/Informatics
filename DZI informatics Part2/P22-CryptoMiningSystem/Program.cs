@@ -6,7 +6,8 @@ namespace P22_CryptoMiningSystem
     {
         static void Main()
         {
-
+            Engine e = new Engine();
+            //TODO Testing
         }
     }
 }
