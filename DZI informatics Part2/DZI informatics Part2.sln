@@ -43,7 +43,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P19-ListyIterator", "P19-Li
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P20-ComparingObject", "P20-ComparingObject\P20-ComparingObject.csproj", "{113D094E-5ABD-4B34-BD13-7E33F77EF69A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P21-CryptoMiningSystem", "P21-CryptoMiningSystem\P21-CryptoMiningSystem.csproj", "{E97C87FA-C94E-4F2F-91A0-127499A09781}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P21-CryptoMiningSystem", "P21-CryptoMiningSystem\P21-CryptoMiningSystem.csproj", "{E97C87FA-C94E-4F2F-91A0-127499A09781}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P22-CryptoMiningSystem", "P22-CryptoMiningSystem\P22-CryptoMiningSystem.csproj", "{DF50262E-4CB2-4B1B-ABC1-9297BFAD16D5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -135,6 +137,10 @@ Global
 		{E97C87FA-C94E-4F2F-91A0-127499A09781}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E97C87FA-C94E-4F2F-91A0-127499A09781}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E97C87FA-C94E-4F2F-91A0-127499A09781}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF50262E-4CB2-4B1B-ABC1-9297BFAD16D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF50262E-4CB2-4B1B-ABC1-9297BFAD16D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF50262E-4CB2-4B1B-ABC1-9297BFAD16D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF50262E-4CB2-4B1B-ABC1-9297BFAD16D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
