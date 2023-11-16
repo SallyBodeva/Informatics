@@ -13,14 +13,14 @@ public class VideoCard : Components
     {
         get
         {
-            return this.Ram*(base.Generation / 10);
+            return this.Ram* base.Generation / 10;
         }
     }
     public override int LifeWorkingHours
     {
         get
         {
-            return this.Ram * (base.Generation * 10);
+            return this.Ram * base.Generation * 10;
         }
     }
 }

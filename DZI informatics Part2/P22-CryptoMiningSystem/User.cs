@@ -25,8 +25,7 @@ public class User
     {
         get
         {
-            //= user's money / 100
-            int s = int.Parse(this.Money.ToString());
+            int s = int.Parse(Math.Floor(this.Money).ToString());
             return s / 100; 
         }
     }

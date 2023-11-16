@@ -28,7 +28,7 @@ public class Computer
     {
         get
         {
-            return VideoCard.MinedMoneyPerHour * Processor.MineMultiplier;
+            return (VideoCard.MinedMoneyPerHour * Processor.MineMultiplier);
         }
     }
 }

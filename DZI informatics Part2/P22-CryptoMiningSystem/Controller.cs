@@ -85,10 +85,13 @@ public class Controller
         double minedMoney = 0;
         foreach (var user in users)
         {
-            minedMoney += user.Value.Computer.MinedAmountPerHour * 24;
-            user.Value.Computer.Processor.LifeWorkingHours-=24;
-            user.Value.Computer.VideoCard.LifeWorkingHours -= 24;
-            user.Value.Money += user.Value.Computer.MinedAmountPerHour * 24;
+            if (user.Value.Computer!=null)
+            {
+                minedMoney += user.Value.Computer.MinedAmountPerHour* 24;
+                user.Value.Computer.Processor.LifeWorkingHours -= 24;
+                user.Value.Computer.VideoCard.LifeWorkingHours -= 24;
+                user.Value.Money += user.Value.Computer.MinedAmountPerHour * 24;
+            }
         }
         return $"Daily profits: {minedMoney}!";
         
@@ -97,9 +100,9 @@ public class Controller
     public string UserInfo(List<string> args)
     {
         string name = args[1];
-        User u = users[name];
         if (users.ContainsKey(name))
         {
+            User u = users[name];
             StringBuilder sb = new StringBuilder();
             sb.AppendLine($"Name: {name} - Stars: {u.Stars}");
             sb.AppendLine($"Balance: {u.Money}");

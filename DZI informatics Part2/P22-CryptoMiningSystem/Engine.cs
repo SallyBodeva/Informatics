@@ -34,7 +34,7 @@ namespace P22_CryptoMiningSystem
                         case "Mine":
                             Console.WriteLine(controller.Mine());
                             break;
-                        case "UserInfo ":
+                        case "UserInfo":
                             Console.WriteLine(controller.UserInfo(args));
                             break;
                         case "Shutdown":
