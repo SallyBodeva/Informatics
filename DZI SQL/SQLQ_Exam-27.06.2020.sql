@@ -94,7 +94,15 @@ CREATE TABLE PartsNeeded
 );
 
 -- Querying 
+
 -- Problem 5 Mechanic Assignments
 SELECT  CONCAT_WS(' ',m.FirstName,m.LastName) AS 'Mechanic', j.Status,j.IssueDate FROM Mechanics AS m
 JOIN Jobs AS j ON j.MechanicId=m.MechanicId
 ORDER BY m.MechanicId, j.IssueDate,j.JobId;
+
+-- Problem 6 Current Clients
+
+SELECT CONCAT_WS(' ',c.FirstName,c.LastName) AS 'Client',(DATEDIFF(DAY,j.IssueDate,'2017/04/24')) AS 'Days going',j.Status FROM Clients AS c
+JOIN Jobs AS j ON j.ClientId=c.ClientId
+WHERE j.Status='In Progress'
+ORDER BY [Days going] DESC, c.ClientId ASC;
