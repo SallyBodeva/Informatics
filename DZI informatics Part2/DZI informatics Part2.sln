@@ -45,6 +45,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P20-ComparingObject", "P20-
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P22-CryptoMiningSystem", "P22-CryptoMiningSystem\P22-CryptoMiningSystem.csproj", "{DF50262E-4CB2-4B1B-ABC1-9297BFAD16D5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P23-VesselsOOP", "P23-VesselsOOP\P23-VesselsOOP.csproj", "{4D0D2110-FA92-4409-B9C0-CF9F8B2B53FC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -135,6 +137,10 @@ Global
 		{DF50262E-4CB2-4B1B-ABC1-9297BFAD16D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF50262E-4CB2-4B1B-ABC1-9297BFAD16D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF50262E-4CB2-4B1B-ABC1-9297BFAD16D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D0D2110-FA92-4409-B9C0-CF9F8B2B53FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D0D2110-FA92-4409-B9C0-CF9F8B2B53FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D0D2110-FA92-4409-B9C0-CF9F8B2B53FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D0D2110-FA92-4409-B9C0-CF9F8B2B53FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
