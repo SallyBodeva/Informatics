@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Xml.Linq;
 
 
 public abstract class Vessel
@@ -55,7 +57,35 @@ public abstract class Vessel
         {
             throw new NullReferenceException("Target cannot be null.");
         }
-
+        target.ArmorThinkness -= this.MainWeaponCaliber;
+        if ((target.ArmorThinkness -= this.MainWeaponCaliber)<0)
+        {
+            target.ArmorThinkness = 0;
+        }
+        this.Targets.Add(target.Name);
+    }
+    public void RepairVessel()
+    {
+        this.ArmorThinkness = default;
+    }
+    public override string ToString()
+    {
+        StringBuilder sb = new StringBuilder();
+        sb.AppendLine($"- {this.Name}");
+        sb.AppendLine($"* Type: {GetType().Name}");
+        sb.AppendLine($"*Armor thickness: {this.ArmorThinkness}");
+        sb.AppendLine($"*Main weapon caliber: {this.MainWeaponCaliber}");
+        sb.AppendLine($"*Speed: {this.Speed} knots");
+        sb.Append("* Targets: \" – ");
+        if (this.Targets.Any())
+        {
+            string targetsInfo = string.Join(", ",Targets);
+            sb.AppendLine(targetsInfo);
+        }
+        else
+        {
+            sb.AppendLine("None");
+        }
+        return sb.ToString().TrimEnd();
     }
 }
-

@@ -28,5 +28,6 @@ public class Captain
     public int CombatExperience { get; set; } = 0;
 
     public List<Vessel> Vessels { get; set; }
+
 }
 
