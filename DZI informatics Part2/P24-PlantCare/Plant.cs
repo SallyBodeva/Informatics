@@ -47,7 +47,7 @@ public abstract class Plant
             type = value;
         }
     }
-    public List<CareItem> CareItems { get; set; }
+    public List<CareItem> CareItems { get; set; } = new List<CareItem>();
     public double HumidityLevel
     {
         get { return humidityLevel; }

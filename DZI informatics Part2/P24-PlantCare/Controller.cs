@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 
@@ -8,13 +9,14 @@ public class Controller
     private Dictionary<int,Plant> plants = new Dictionary<int, Plant>();
     public string AddCareItem(List<string> args)
     {
-        int plantId = int.Parse(args[0]);
-        string name = args[1];
-        bool status = bool.Parse(args[2]);
+        int plantId = int.Parse(args[1]);
+        string name = args[2];
+        bool status = bool.Parse(args[3]);
         Plant p = plants[plantId];
         if (p != null)
         {
-            p.AddCareItem(new CareItem(name, status));
+            CareItem cI = new CareItem(name, status);
+            p.AddCareItem(cI);
             return $"Created Care {name} for {plantId}!";
         }
         else
@@ -25,11 +27,11 @@ public class Controller
 
     public string AddPlant(List<string> args)
     {
-        int id = int.Parse(args[0]);
-        string name = args[1];
-        double humidityLevel = double.Parse(args[2]);
-        double fertilityLevel = double.Parse(args[3]);
-        string type = args[4];
+        int id = int.Parse(args[1]);
+        string name = args[2];
+        double humidityLevel = double.Parse(args[3]);
+        double fertilityLevel = double.Parse(args[4]);
+        string type = args[5];
         if (this.plants.ContainsKey(id))
         {
             return $"Plant with ID {id} already exists!";
@@ -38,12 +40,12 @@ public class Controller
         switch (type)
         {
             case "flower":
-                string color = args[5];
+                string color = args[6];
                 p = new FloweringPlant(id, name, humidityLevel, fertilityLevel, color);
                 break;
 
             case "tree":
-                int height = int.Parse(args[5]);
+                int height = int.Parse(args[6]);
                 p = new TreePlant(id, name, humidityLevel, fertilityLevel, height);
                 break;
         }
@@ -52,18 +54,18 @@ public class Controller
     }
     public string GetTotalCaresByPlantId(List<string> args)
     {
-        int id = int.Parse(args[0]);
+        int id = int.Parse(args[1]);
         if (!plants.ContainsKey(id))
         {
-            return "Plant not found!.";
+            return "Plant not found!";
         }
         Plant p = plants[id];
         return $"Total cares for plant {id}: {p.TotalCaresDone()}";
     }
     public string WaterPlantById(List<string> args)
     {
-        int id = int.Parse(args[0]);
-        double percent = double.Parse(args[1]);
+        int id = int.Parse(args[1]);
+        double percent = double.Parse(args[2]);
         Plant p = plants[id];
         if (p.Water(percent))
         {
@@ -73,8 +75,8 @@ public class Controller
     }
     public string FertilizePlantById(List<string> args)
     {
-        int id = int.Parse(args[0]);
-        double percent = double.Parse(args[1]);
+        int id = int.Parse(args[1]);
+        double percent = double.Parse(args[2]);
         Plant p = plants[id];
         if (p.Fertilize(percent))
         {
@@ -84,7 +86,20 @@ public class Controller
     }
     public string GetTallestTree(List<string> args)
     {
-        //TODO: Add some logic here …
+        if (plants.Any())
+        {
+            List<TreePlant> trees = new List<TreePlant>();
+            foreach (var item in plants)
+            {
+                if (item.Value.Type=="tree")
+                {
+                    TreePlant tp = (TreePlant)item.Value;
+                    trees.Add(tp);
+                }
+            }
+            return trees.OrderBy(x => x.Height).LastOrDefault().ToString();
+        }
+        return $"No trees found!";
     }
 
 }
