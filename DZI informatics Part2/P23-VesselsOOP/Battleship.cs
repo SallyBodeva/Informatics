@@ -36,5 +36,9 @@ public class Battleship : Vessel
             return $"*Sonar mode: OFF";
         }
     }
+    public void RepairVessel()
+    {
+        this.ArmorThinkness = 300;
+    }
 }
 

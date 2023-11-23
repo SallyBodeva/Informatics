@@ -10,5 +10,35 @@ public class Submarine : Vessel
     }
 
     public bool SubmergeMode { get; set; } = false;
+    public void ToggleSubmergeMode()
+    {
+        if (this.SubmergeMode==false)
+        {
+            this.SubmergeMode = true;
+            this.MainWeaponCaliber += 40;
+            this.Speed -= 4;
+        }
+        else
+        {
+            this.SubmergeMode = false;
+            this.MainWeaponCaliber -= 40;
+            this.Speed += 4;
+        }
+    }
+    public void RepairVessel()
+    {
+        this.ArmorThinkness = 200;
+    }
+    public override string ToString()
+    {
+        if (this.SubmergeMode)
+        {
+            return $"*Submerge mode: ON";
+        }
+        else
+        {
+            return $"*Submerge mode: OFF";
+        }
+    }
 }
 
