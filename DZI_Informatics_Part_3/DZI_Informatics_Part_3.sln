@@ -5,7 +5,9 @@ VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01-PersonalInfoData", "P01-PersonalInfoData\P01-PersonalInfoData.csproj", "{3E817A63-FFA7-4246-91E6-C15EB735228B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02-SudentsGrades", "P02-SudentsGrades\P02-SudentsGrades.csproj", "{1765C3D3-1FD2-41DE-9F97-E517012B3D46}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02-SudentsGrades", "P02-SudentsGrades\P02-SudentsGrades.csproj", "{1765C3D3-1FD2-41DE-9F97-E517012B3D46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03-HotelBookingApplication(OOP)", "P03-HotelBookingApplication(OOP)\P03-HotelBookingApplication(OOP).csproj", "{178035AF-2802-4297-A715-AE4A0BE386D3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{1765C3D3-1FD2-41DE-9F97-E517012B3D46}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1765C3D3-1FD2-41DE-9F97-E517012B3D46}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1765C3D3-1FD2-41DE-9F97-E517012B3D46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{178035AF-2802-4297-A715-AE4A0BE386D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{178035AF-2802-4297-A715-AE4A0BE386D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{178035AF-2802-4297-A715-AE4A0BE386D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{178035AF-2802-4297-A715-AE4A0BE386D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
