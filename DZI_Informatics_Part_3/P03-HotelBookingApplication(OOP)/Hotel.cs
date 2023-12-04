@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace P03_HotelBookingApplication_OOP_
@@ -10,6 +11,12 @@ namespace P03_HotelBookingApplication_OOP_
         private int category;
         private RoomRepository rooms;
         private BookingRepository booking;
+
+        public Hotel(string fullName, int category)
+        {
+            this.FullName = fullName;
+            this.Category = category;
+        }
 
         public string FullName
         {
@@ -35,9 +42,17 @@ namespace P03_HotelBookingApplication_OOP_
                 category = value;
             }
         }
+
+        public override bool Equals(object obj)
+        {
+            return obj is Hotel hotel &&
+                   fullName == hotel.fullName &&
+                   category == hotel.category;
+        }
+
         public double Turnover()
         {
-
+            return Math.Round(booking.All().Sum(x => x.ResidenceDuration * x.Room.PricePerNight), 2);
         }
     }
 }
