@@ -7,13 +7,12 @@ namespace P04_LessonsFinder
 {
     public class Subject
     {
-        private List<Lesson> lessons;
+        private List<Lesson> lessons= new List<Lesson>();
         private string name;
 
         public Subject(string name)
         {
             this.Name = name;
-            lessons = new List<Lesson>();
         }
 
         public string Name
@@ -43,7 +42,7 @@ namespace P04_LessonsFinder
         }
         public double AverageRating()
         {
-            return this.lessons.Where(x=>x.Ratings.Count>0).Average(x => x.Rating);
+            return this.lessons.Average(x => x.Rating);
         }
         public List<Lesson> GetLessonsByTeacher(string teacher)
         {

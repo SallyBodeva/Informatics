@@ -41,7 +41,7 @@ namespace P04_LessonsFinder
                             result = controller.GetLessonsByTeacher(args);
                             break;
                         case "GetLessonsBetweenDuration":
-                            result = controller.GetLessonsByTeacher(args);
+                            result = controller.GetLessonsBetweenDuration(args);
                             break;
                         case "End":
                             Environment.Exit(0);

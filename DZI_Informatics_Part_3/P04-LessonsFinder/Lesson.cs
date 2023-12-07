@@ -21,6 +21,7 @@ namespace P04_LessonsFinder
             this.Grade = grade;
             this.Difficulty = difficulty;
             this.Teacher = teacher;
+            this.Ratings= new List<int>();
         }
 
         public string Title
@@ -88,12 +89,16 @@ namespace P04_LessonsFinder
             }
         }
 
-        public List<int> Ratings { get; set; } = new List<int>() { 1, 2, 3, 4, 5 };
+        public List<int> Ratings { get; set; }
         public double Rating
         {
             get
             {
-                return this.Ratings.Average();
+                if (this.Ratings.Count>0)
+                {
+                    return this.Ratings.Average();
+                }
+                return 0;
             }
         }
 
