@@ -22,7 +22,5 @@ namespace P03_HotelBookingApplication_OOP_
                 return $"{category} stars hotel {hotelName} is registered in our platform and expects room availability to be uploaded.";
             }
         }
-        //TODO
-        // atidzhe dzhivgova pravi tazi zadacha
     }
 }
