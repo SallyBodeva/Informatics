@@ -8,7 +8,7 @@ namespace P05_FilesMethods
     {
         static void Main()
         {
-            DeleteFile(@"C:\Users\EliteBook\Desktop\salkaEVelika.txt");
+            EditExistingFile(@"C:\Users\EliteBook\Desktop\sally.txt");
         }
         public static void CreateBlankFile(string fileName)
         {
@@ -19,10 +19,39 @@ namespace P05_FilesMethods
         {
             if (File.Exists(path))
             {
+
                 File.Delete(path);
                 Console.WriteLine("File deleted successfully");
             }
             else Console.WriteLine("File is not found");
+        }
+        public static void CreateFileWithContent(string path)
+        {
+            StreamWriter sT = File.CreateText(path);
+            using (sT)
+            {
+                sT.WriteLine("I am 18 years old");
+                sT.WriteLine("My favourite colour is blue");
+            }
+        }
+        public static void CreateFileRead(string path)
+        {
+            StreamWriter st = File.CreateText(path);
+            using (st)
+            {
+                st.WriteLine("Here is the content of the file mytest.txt :");
+                st.WriteLine("Hello and Welcome");
+            }
+            string[] readInfo = File.ReadAllLines(path);
+            Console.WriteLine(string.Join("",readInfo));
+        }
+        public static void EditExistingFile(string path)
+        {
+            StreamWriter fs = new StreamWriter(path,true);
+            using (fs)
+            {
+                fs.WriteLine("\nThis is the line appended at last line.");
+            }
         }
     }
 }
