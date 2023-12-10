@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03-HotelBookingApplication
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04-LessonsFinder", "P04-LessonsFinder\P04-LessonsFinder.csproj", "{5F6ED921-F27C-4D52-A701-609D097D8DAE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05-FilesMethods", "P05-FilesMethods\P05-FilesMethods.csproj", "{2844A674-157D-4F1C-939D-1EE0E00C2FA9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P05-FilesMethods", "P05-FilesMethods\P05-FilesMethods.csproj", "{2844A674-157D-4F1C-939D-1EE0E00C2FA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06-RotationArray", "P06-RotationArray\P06-RotationArray.csproj", "{56D8602D-B80C-4583-8224-B8F4E104C8D4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{2844A674-157D-4F1C-939D-1EE0E00C2FA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2844A674-157D-4F1C-939D-1EE0E00C2FA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2844A674-157D-4F1C-939D-1EE0E00C2FA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56D8602D-B80C-4583-8224-B8F4E104C8D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56D8602D-B80C-4583-8224-B8F4E104C8D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56D8602D-B80C-4583-8224-B8F4E104C8D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56D8602D-B80C-4583-8224-B8F4E104C8D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
