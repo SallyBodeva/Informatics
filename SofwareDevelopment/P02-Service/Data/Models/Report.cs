@@ -30,7 +30,7 @@ namespace P02_Service.Data.Models
 
         public virtual User User { get; set; }
 
-        public int EmployeeId { get; set; }
+        public int? EmployeeId { get; set; }
 
         public virtual Employee Employee { get; set; }
 

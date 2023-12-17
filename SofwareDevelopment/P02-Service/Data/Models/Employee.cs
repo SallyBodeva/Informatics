@@ -19,7 +19,7 @@ namespace P02_Service.Data.Models
 
         public DateTime? Birthdate { get; set; }
 
-        public int Age { get; set; }
+        public int? Age { get; set; }
 
         public int DepartmentId { get; set; }
 
