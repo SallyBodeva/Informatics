@@ -8,19 +8,20 @@ namespace P07_HighwayToPeak
 {
     public class BaseCamp
     {
-        private List<string> residents;
+        public List<string> Residents { get; set; }
         public BaseCamp()
         {
-            this.residents = new List<string>();
+            this.Residents = new List<string>();
         }
 
         public void ArriveAtCamp(string climberName)
         {
-            this.residents.Add(climberName);
+            this.Residents.Add(climberName);
         }
         public void LeaveCamp(string climberName)
         {
-            this.residents.Remove(climberName);
+            this.Residents.Remove(climberName);
         }
+        
     }
 }
