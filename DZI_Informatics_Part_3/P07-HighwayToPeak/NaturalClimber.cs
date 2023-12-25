@@ -16,6 +16,5 @@ namespace P07_HighwayToPeak
         {
             this.Stamina += (daysCount * 2);
         }
-        error
     }
 }
