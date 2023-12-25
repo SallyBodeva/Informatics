@@ -5,7 +5,9 @@ VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01-WashingMachineService", "P01-WashingMachineService\P01-WashingMachineService.csproj", "{837DBABE-0EB4-4741-B667-0BC383C71530}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02-Service", "P02-Service\P02-Service.csproj", "{896739DB-AF25-48C7-8630-CC74F81A7D2D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02-Service", "P02-Service\P02-Service.csproj", "{896739DB-AF25-48C7-8630-CC74F81A7D2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03-Railway", "P03-Railway\P03-Railway.csproj", "{838C489E-8429-4E91-AEFC-BE527B806104}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{896739DB-AF25-48C7-8630-CC74F81A7D2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{896739DB-AF25-48C7-8630-CC74F81A7D2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{896739DB-AF25-48C7-8630-CC74F81A7D2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{838C489E-8429-4E91-AEFC-BE527B806104}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{838C489E-8429-4E91-AEFC-BE527B806104}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{838C489E-8429-4E91-AEFC-BE527B806104}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{838C489E-8429-4E91-AEFC-BE527B806104}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
