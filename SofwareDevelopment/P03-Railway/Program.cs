@@ -13,18 +13,21 @@ namespace P03_Railway
 
         private static void GetPassengersTickets()
         {
-            var result = context.Passengers
+            var result = context.Tickets
                 .Select(x =>
                         new
                         {
-                            PassengerName = x.Name,
-                            TicketPrice = x.Tickets.Select(y => y.Price),
-                            DepartuteDate = x.Tickets.Select(y => y.DateOfDeparture),
-                            TrainId = x.Tickets.Select(y => y.TrainId)
+                            PassengerName = x.Passenger.Name,
+                            TicketPrice = x.Price,
+                            DepartuteDate = x.DateOfDeparture,
+                            TrainId = x.TrainId
                         }
                 ).OrderByDescending(x => x.TicketPrice).ThenBy(x => x.PassengerName);
 
-            Console.WriteLine(string.Join(Environment.NewLine, result));
+            foreach (var item in result)
+            {
+                Console.WriteLine(item);
+            }
         }
 
         private static void GetTicketsByPriceAndDeparture()
