@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P05-FilesMethods", "P05-Fil
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P06-RotationArray", "P06-RotationArray\P06-RotationArray.csproj", "{56D8602D-B80C-4583-8224-B8F4E104C8D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P07-HighwayToPeak", "P07-HighwayToPeak\P07-HighwayToPeak.csproj", "{664EEC0E-C582-4342-A299-0E91EEC35DE6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P07-HighwayToPeak", "P07-HighwayToPeak\P07-HighwayToPeak.csproj", "{664EEC0E-C582-4342-A299-0E91EEC35DE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P08-NauticalCatchChallenge(OOP)", "P08-NauticalCatchChallenge(OOP)\P08-NauticalCatchChallenge(OOP).csproj", "{4F20D2CD-6219-4F1C-A998-2378C4DDD1A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{664EEC0E-C582-4342-A299-0E91EEC35DE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{664EEC0E-C582-4342-A299-0E91EEC35DE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{664EEC0E-C582-4342-A299-0E91EEC35DE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F20D2CD-6219-4F1C-A998-2378C4DDD1A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F20D2CD-6219-4F1C-A998-2378C4DDD1A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F20D2CD-6219-4F1C-A998-2378C4DDD1A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F20D2CD-6219-4F1C-A998-2378C4DDD1A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
