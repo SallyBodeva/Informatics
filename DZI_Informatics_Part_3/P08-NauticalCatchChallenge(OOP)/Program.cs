@@ -1,10 +1,14 @@
-﻿namespace P08_NauticalCatchChallenge_OOP_
+﻿using NauticalCatchChallenge.Core;
+using NauticalCatchChallenge.Core.Contracts;
+
+namespace P08_NauticalCatchChallenge_OOP_
 {
     internal class Program
     {
         static void Main()
         {
-            //TODO
+            IEngine engine = new Engine();
+            engine.Run();
         }
     }
 }
