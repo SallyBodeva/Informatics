@@ -77,7 +77,32 @@ namespace P08_NauticalCatchChallenge_OOP_.Core
 
         public string SwimIntoCompetition(string fishType, string fishName, double points)
         {
-            throw new NotImplementedException();
+            if (fishType!=nameof(ReefFish) && fishType!= nameof(DeepSeaFish) && fishType!=nameof(PredatoryFish))
+            {
+                return $"{fishType} is forbidden for chasing in our competition.";
+            }
+            if (fish.Models.Any(x=>x.GetType().Name==fishName))
+            {
+                return $"{fishName} is already allowed -> {divers.GetType().Name}.";
+            }
+            Fish f = null;
+            switch (fishType)
+            {
+                case nameof(DeepSeaFish):
+                    f = new DeepSeaFish(fishName, points);
+                    break;
+                case nameof(ReefFish):
+                    f = new ReefFish(fishName, points);
+                    break;
+                case nameof(PredatoryFish):
+                    f = new PredatoryFish(fishName, points);
+                    break;
+                default:
+                    throw new ArgumentException("Invalid fish type");
+                    break;
+            }
+            fish.AddModel(f);
+            return $"{fishName} is allowed for chasing.";
         }
     }
 }
