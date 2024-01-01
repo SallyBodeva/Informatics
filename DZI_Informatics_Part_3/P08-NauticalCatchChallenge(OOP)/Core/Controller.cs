@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace P08_NauticalCatchChallenge_OOP_.Core
 {
@@ -57,22 +58,60 @@ namespace P08_NauticalCatchChallenge_OOP_.Core
 
         public string CompetitionStatistics()
         {
-            throw new NotImplementedException();
+            List<IDiver> info = divers.Models.OrderByDescending(x => x.CompetitionPoints)
+                .ThenByDescending(x => x.Catch.Count).ThenBy(x => x.Name).ToList();
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine("**Nautical-Catch-Challenge**");
+            info.ForEach(x => sb.AppendLine(x.ToString()));
+            return sb.ToString().TrimEnd();
         }
 
         public string DiveIntoCompetition(string diverType, string diverName)
         {
-            throw new NotImplementedException();
+            if (diverName!=nameof(FreeDiver) && diverName!=nameof(ScubaDiver))
+            {
+                return $"{diverType} is not allowed in our competition.";
+            }
+            if (divers.GetModel(diverName)!=null)
+            {
+                return $"{diverName} is already a participant -> {nameof(DiverRepository)}.";
+            }
+            Diver d = null;
+            switch (diverType)
+            {
+                case nameof(FreeDiver):
+                    d = new FreeDiver(diverName);
+                    break;
+                case nameof(ScubaDiver):
+                    d = new ScubaDiver(diverName);
+                    break;
+                default:
+                    throw new ArgumentException("Invalid diver type...");
+                    break;
+            }
+            divers.AddModel(d);
+            return $"{diverName} is successfully registered for the competition -> {nameof(DiverRepository)}.";
         }
 
         public string DiverCatchReport(string diverName)
         {
-            throw new NotImplementedException();
+            IDiver specificDiver = divers.GetModel(diverName);
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine($"Diver [ Name: {specificDiver.Name}, Oxygen left: {specificDiver.OxygenLevel}, Fish caught: {specificDiver.Catch.Count}, Points earned: {specificDiver.CompetitionPoints}]");
+            sb.AppendLine("Catch Report:");
+            foreach (var fish in specificDiver.Catch)
+            {
+                sb.AppendLine(fish.ToString());
+            }
+            return sb.ToString().TrimEnd();
         }
 
         public string HealthRecovery()
         {
-            throw new NotImplementedException();
+            List<IDiver> unhealthyDivers = divers.Models.Where(x => x.HasHealthIssues == true).ToList();
+            unhealthyDivers.ForEach(x => x.UpdateHealthStatus());
+            unhealthyDivers.ForEach(x => x.RenewOxy());
+            return $"Divers recovered: {unhealthyDivers.Count}";
         }
 
         public string SwimIntoCompetition(string fishType, string fishName, double points)

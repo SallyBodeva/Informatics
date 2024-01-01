@@ -13,7 +13,7 @@ namespace P08_NauticalCatchChallenge_OOP_.Models
     {
 
         private List<IDiver> divers;
-        IReadOnlyCollection<IDiver> IRepository<IDiver>.Models => divers;
+        public IReadOnlyCollection<IDiver> Models => divers;
 
         public void AddModel(IDiver diver)
         {
