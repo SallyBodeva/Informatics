@@ -3,6 +3,8 @@
     using NauticalCatchChallenge.Core.Contracts;
     using NauticalCatchChallenge.IO.Contracts;
     using NauticalCatchChallenge.IO;
+    using P08_NauticalCatchChallenge_OOP_.Core;
+
     public class Engine : IEngine
     {
         private IReader reader;
@@ -13,7 +15,7 @@
         {
             this.reader = new Reader();
             this.writer = new Writer();
-            //this.controller = new Controller();
+            this.controller = new Controller();
         }
         public void Run()
         {

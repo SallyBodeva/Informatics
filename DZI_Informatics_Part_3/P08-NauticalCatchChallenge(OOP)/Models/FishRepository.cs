@@ -10,7 +10,7 @@ namespace P08_NauticalCatchChallenge_OOP_.Models
 {
     public class FishRepository : IRepository<IFish>
     {
-        private List<IFish> fish;
+        private List<IFish> fish = new List<IFish>();
         public IReadOnlyCollection<IFish> Models => fish;
 
         public void AddModel(IFish model)
@@ -20,7 +20,11 @@ namespace P08_NauticalCatchChallenge_OOP_.Models
 
         public IFish GetModel(string name)
         {
-            return this.fish.FirstOrDefault(x => x.Name == name);
+            if (fish.Any(x=>x.Name==name))
+            {
+                return this.fish.FirstOrDefault(x => x.Name == name); 
+            }
+            return null;
         }
     }
 }

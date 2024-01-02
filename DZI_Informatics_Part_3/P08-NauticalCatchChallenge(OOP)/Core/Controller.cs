@@ -12,8 +12,8 @@ namespace P08_NauticalCatchChallenge_OOP_.Core
 {
     public class Controller : IController
     {
-        private DiverRepository divers;
-        private FishRepository fish;
+        private DiverRepository divers = new DiverRepository();
+        private FishRepository fish = new FishRepository();
         public string ChaseFish(string diverName, string fishName, bool isLucky)
         {
             IDiver d = divers.GetModel(diverName);
@@ -68,7 +68,7 @@ namespace P08_NauticalCatchChallenge_OOP_.Core
 
         public string DiveIntoCompetition(string diverType, string diverName)
         {
-            if (diverName!=nameof(FreeDiver) && diverName!=nameof(ScubaDiver))
+            if (diverType!=nameof(FreeDiver) && diverType!=nameof(ScubaDiver))
             {
                 return $"{diverType} is not allowed in our competition.";
             }
@@ -120,9 +120,9 @@ namespace P08_NauticalCatchChallenge_OOP_.Core
             {
                 return $"{fishType} is forbidden for chasing in our competition.";
             }
-            if (fish.Models.Any(x=>x.GetType().Name==fishName))
+            if (fish.Models.Any(x=>x.Name==fishName))
             {
-                return $"{fishName} is already allowed -> {divers.GetType().Name}.";
+                return $"{fishName} is already allowed -> {fish.GetType().Name}.";
             }
             Fish f = null;
             switch (fishType)

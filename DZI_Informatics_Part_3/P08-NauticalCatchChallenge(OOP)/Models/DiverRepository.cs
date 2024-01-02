@@ -12,7 +12,7 @@ namespace P08_NauticalCatchChallenge_OOP_.Models
     public class DiverRepository:IRepository<IDiver>
     {
 
-        private List<IDiver> divers;
+        private List<IDiver> divers = new List<IDiver>();
         public IReadOnlyCollection<IDiver> Models => divers;
 
         public void AddModel(IDiver diver)
@@ -22,7 +22,11 @@ namespace P08_NauticalCatchChallenge_OOP_.Models
 
         public IDiver GetModel(string name)
         {
-            return this.divers.FirstOrDefault(x => x.Name == name);
+            if (divers.Any(x=>x.Name==name))
+            {
+                return this.divers.FirstOrDefault(x => x.Name == name);
+            }
+            return null;
         }
     }
 }

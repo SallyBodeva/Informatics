@@ -12,7 +12,7 @@ namespace P08_NauticalCatchChallenge_OOP_.Models
     {
         private string name;
         private int oxygenLevel;
-        private List<string> @catch;
+        private List<string> @catch = new List<string>();
         private double competitionPoints = 0;
         private bool hasHealthIssues;
 
