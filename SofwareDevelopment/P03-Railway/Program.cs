@@ -8,7 +8,6 @@ namespace P03_Railway
         private static AppDbContext context = new AppDbContext();
         public static void Main()
         {
-
         }
 
         private static void TrainsDeparturingAt8()
