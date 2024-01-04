@@ -8,6 +8,18 @@ namespace P03_Railway
         private static AppDbContext context = new AppDbContext();
         public static void Main()
         {
+
+        }
+
+        private static void GetMaintenanceInspectionWithTown()
+        {
+            var result = context.MaintenanceRecords
+                  .Where(x => x.Details.Contains("inspection")).ToList();
+
+            foreach (var item in result.OrderBy(x => x.TrainId))
+            {
+                Console.WriteLine($"{item.TrainId} {item.Train.DepartureTown.Name} {item.Details}");
+            }
         }
 
         private static void TrainsDeparturingAt8()
