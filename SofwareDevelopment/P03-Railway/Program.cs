@@ -11,6 +11,21 @@ namespace P03_Railway
 
         }
 
+        private static void TrainsDeparturingAt8()
+        {
+            var result = context.Tickets
+                .Where(x => (x.Price > 50) && (x.Train.HourOfDepartute.Substring(0, 2) == "08"))
+                .Select(x => new
+                {
+                    TrainId = x.Train.Id,
+                    Hour = x.Train.HourOfDepartute,
+                    Price = x.Price,
+                    Town = x.Train.ArrivalTown.Name
+                }).OrderBy(x => x.Price).ThenBy(x => x.TrainId);
+
+            Console.WriteLine(string.Join(Environment.NewLine, result));
+        }
+
         private static void GetRailwayStationsWithoutPassingTrains()
         {
             var notScheduledTrains = context.TrainRailwayStations.Select(x => x.RailwayStationId);
@@ -55,3 +70,4 @@ namespace P03_Railway
         }
     }
 }
+
