@@ -7,6 +7,7 @@ namespace P06_RotationArray
     {
         static void Main()
         {
+            //helllo world
             int[] array = Console.ReadLine().Split(" ").Select(int.Parse).ToArray();
             int n = int.Parse(Console.ReadLine());
             int index = 0;
