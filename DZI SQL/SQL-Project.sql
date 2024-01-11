@@ -40,7 +40,7 @@ CREATE TABLE Employee
 	Id INT PRIMARY KEY IDENTITY,
 	FirstName NVARCHAR(50) NOT NUll,
 	LastName NVARCHAR(50) NOT NULL,
-	Age INT,
+	Age INT NOT NULL,
 	Email VARCHAR(100) NOT NULL,
 	Position VARCHAR(100) NOT NULL,
 	PhoneNumber VARCHAR(10) NOT NULL
@@ -109,3 +109,95 @@ CREATE TABLE EmployeeEvent
 			FOREIGN KEY (EventId)
 			REFERENCES Event(Id)
 );
+
+INSERT INTO Town(Name)
+VALUES ('London'),
+       ('Paris'),
+       ('Sofia'),
+       ('Plovdiv'),
+       ('Burgas');
+
+INSERT INTO Address(Name,TownId)
+VALUES ('Potter str ¹7',1),
+       ('Vitosha bul',3),
+       ('Petko Voivoda', 4),
+       ('Kraibrezna',5);
+
+INSERT INTO Attendee(FirstName,LastName,Age,Email)
+VALUES ('Mitko','Kovachev',45,'mitkp@abv.bg'),
+       ('Elena','Petrova',2,'eli@abv.bg'),
+       ('John','Potter',35,'John@abv.bg'),
+       ('Kaya','McDaisy',19,'kayap@abv.bg');
+
+INSERT INTO Sponsor(Name,PhoneNum,Email)
+VALUES ('LG','02938823','lg@gmai.com'),
+       ('Pepsi','034323','pepsi@gmai.com'),
+       ('Billa','03443423','billa@gmai.com'),
+       ('XIXO','029343','xixo@gmai.com');
+
+INSERT INTO Employee(FirstName,LastName,Age,Email,Position,PhoneNumber)
+VALUES ('John', 'Harrison',29,'john@gmail.com','Manager','0929389330'),
+       ('Milla', 'Roberts',35,'milla@gmail.com','PR agent','023289330'),
+       ('Anna', 'Smith',40,'anna@gmail.com','Assisnant','02323330'),
+       ('Will', 'Nowels',19,'eva@gmail.com','Security','0829389330');
+
+INSERT INTO TicketType(TypeName)
+VALUES ('VIP'),
+       ('Standart'),
+       ('Platinum'),
+       ('Kid <7');
+
+INSERT INTO Ticket(Price,AttendeeId,TicketTypeId)
+VALUES (18.99,1,2),
+       (99.99,2,1),
+       (150,3,3),
+       (18.99,3,4);
+
+INSERT INTO Event(Name,AddressId,SponsorId,DateOfTakingPlace,Budget)
+VALUES ('The Voice Tour', 1,2,'12-22-2024',10.000),
+       ('Game Contest', 2,1,'09-10-2024',1.000),
+       ('Basketball tournament', 3,4,'01-01-2025',60.000),
+       ('New Year Eve Concert', 1,1,'12-31-2023',5.000);
+
+INSERT INTO AttendeeEvent(AtendeeId,EventId)
+VALUES (1,1),
+       (1,2),
+       (2,3),
+       (3,4);
+
+INSERT INTO EmployeeEvent(EmployeeId,EventId)
+VALUES (1,1),
+       (1,2),
+       (2,3),
+       (3,4);
+
+
+-- Quiries
+
+SELECT * FROM Attendee AS a
+JOIN AttendeeEvent AS ae ON ae.AtendeeId= a.Id
+JOIN Event AS e ON e.Id= ae.EventId
+WHERE a.Age>35
+ORDER BY a.Id;
+
+SELECT CONCAT_WS(' ',FirstName,LastName) AS 'Employee',ev.Name AS 'Event',s.Name AS 'Sponsor' FROM Employee AS e
+JOIN EmployeeEvent AS  ee ON ee.EmployeeId= e.Id
+JOIN Event AS ev ON ev.Id= ee.EventId
+JOIN Sponsor AS s ON s.Id = ev.SponsorId
+ORDER BY Sponsor;
+
+SELECT CONCAT_WS(' ',FirstName,LastName) AS 'Attendee',t.Price,tt.TypeName FROM Attendee AS a
+JOIN Ticket AS t ON t.AttendeeId=a.Id
+JOIN TicketType AS tt ON tt.Id= t.Id;
+
+
+SELECT * FROM Event
+WHERE LEN(Name)< 15 AND Budget<15000
+ORDER BY id;
+
+SELECT * FROM Employee
+ WHERE Position IN ('PR agent','Security')
+ ORDER BY Age;
+
+SELECT * FROM Ticket AS t
+JOIN TicketType AS tt ON tt.Id= t.TicketTypeId;
