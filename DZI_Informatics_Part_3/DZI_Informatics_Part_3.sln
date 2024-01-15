@@ -29,7 +29,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P11-DevidedByItsNums", "P11
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P12-Worms&Holes", "P12-Worms&Holes\P12-Worms&Holes.csproj", "{2E4D2625-708A-4C99-B9BB-A4C1538037B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P13-DZI2023", "P13-DZI2023\P13-DZI2023.csproj", "{A417B9EB-851A-4465-8CAC-6DA6D3432ADC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P13-DZI2023", "P13-DZI2023\P13-DZI2023.csproj", "{A417B9EB-851A-4465-8CAC-6DA6D3432ADC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P14-BombNumbers(List)", "P14-BombNumbers(List)\P14-BombNumbers(List).csproj", "{BB0DB60A-4D7A-4987-8036-87AC9AC4454D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +95,10 @@ Global
 		{A417B9EB-851A-4465-8CAC-6DA6D3432ADC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A417B9EB-851A-4465-8CAC-6DA6D3432ADC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A417B9EB-851A-4465-8CAC-6DA6D3432ADC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB0DB60A-4D7A-4987-8036-87AC9AC4454D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB0DB60A-4D7A-4987-8036-87AC9AC4454D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB0DB60A-4D7A-4987-8036-87AC9AC4454D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB0DB60A-4D7A-4987-8036-87AC9AC4454D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
