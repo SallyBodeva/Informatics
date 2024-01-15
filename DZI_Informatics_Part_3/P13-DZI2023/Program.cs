@@ -36,10 +36,41 @@
                         list.RemoveAt(index);
                         break;
                     case "Search":
-                        if (list.Contains(commands[2]))
+                        if (list.Contains(commands[1]))
                         {
-                            Console.WriteLine();
+                            Console.WriteLine(commands[1]);
                         }
+                        else
+                        {
+                            Console.WriteLine("Not contained.");
+                        }
+                        break;
+                    case "Length":
+                        int length = int.Parse(commands[1]);
+                        List<string> wordsWithLength = list.Where(x => x.Length == length).ToList();
+                        if (wordsWithLength.Count>0)
+                        {
+                            Console.WriteLine(string.Join("-",wordsWithLength));
+                        }
+                        else
+                        {
+                            Console.WriteLine("Not contained.");
+                        }
+                        break;
+                    case "Insert":
+                        int indexInsert = int.Parse(commands[1]);
+                        string word = commands[2];
+                        try
+                        {
+                            list.Insert(indexInsert, word);
+                        }
+                        catch (Exception)
+                        {
+                            Console.WriteLine("There are not enough items in the list.");
+                        }
+                        break;
+                    case "Print":
+                        Console.WriteLine(string.Join("; ",list));
                         break;
                 }
             }
