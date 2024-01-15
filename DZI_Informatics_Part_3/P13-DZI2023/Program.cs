@@ -21,13 +21,24 @@
                         }
                         break;
                     case "Update":
-                        foreach (var item in list)
+                        for (int i = 0; i < list.Count; i++)
                         {
-                            if (char.IsLetter(item[0]))
+                            string currentWord = list[i];
+                            if (char.IsLetter(currentWord[0]))
                             {
-                                string newWord = char.ToUpper(item[0]) + item.Substring(1);
-                                
+                                string newWord = char.ToUpper(currentWord[0]) + currentWord.Substring(1);
+                                list[i] = newWord;
                             }
+                        }
+                        break;
+                    case "Remove":
+                        int index = int.Parse(commands[1]);
+                        list.RemoveAt(index);
+                        break;
+                    case "Search":
+                        if (list.Contains(commands[2]))
+                        {
+                            Console.WriteLine();
                         }
                         break;
                 }
