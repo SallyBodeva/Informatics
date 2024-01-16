@@ -6,7 +6,52 @@ namespace P15_DZIPomagalo
     {
         static void Main(string[] args)
         {
-            AfterOneSec();
+
+        }
+
+        private static void GradeInfo()
+        {
+            int grade = int.Parse(Console.ReadLine());
+            switch (grade)
+            {
+                case 2:
+                    Console.WriteLine("Слаб");
+                    break;
+                case 3:
+                    Console.WriteLine("Среден");
+                    break;
+                case 4:
+                    Console.WriteLine("Добър");
+                    break;
+                case 5:
+                    Console.WriteLine("Много добър");
+                    break;
+                case 6:
+                    Console.WriteLine("Отличен");
+                    break;
+                default:
+                    Console.WriteLine("невалидна оценка");
+                    break;
+            }
+        }
+
+        private static void Coordinates()
+        {
+            int x = int.Parse(Console.ReadLine());
+            int y = int.Parse(Console.ReadLine());
+
+            if (x == 0)
+            {
+                Console.WriteLine("V");
+            }
+            if (y == 0)
+            {
+                Console.WriteLine("H");
+            }
+            if (x > 0 && y > 0) Console.WriteLine("I");
+            if (x < 0 && y > 0) Console.WriteLine("II");
+            if (x < 0 && y < 0) Console.WriteLine("III");
+            if (x > 0 && y < 0) Console.WriteLine("IV");
         }
 
         private static void AfterOneSec()
@@ -18,7 +63,7 @@ namespace P15_DZIPomagalo
             TimeOnly time = new TimeOnly(hh, MM, ss);
 
             //TimeOnly newTime = time.AddSeconds(1);
-            Console.WriteLine(newTime.ToString("hh,MM,ss"));
+            //Console.WriteLine(newTime.ToString("hh,MM,ss"));
         }
 
         private static void AfterOneSecWithInts()
