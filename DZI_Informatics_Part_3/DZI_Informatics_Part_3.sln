@@ -31,7 +31,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P12-Worms&Holes", "P12-Worm
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P13-DZI2023", "P13-DZI2023\P13-DZI2023.csproj", "{A417B9EB-851A-4465-8CAC-6DA6D3432ADC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P14-BombNumbers(List)", "P14-BombNumbers(List)\P14-BombNumbers(List).csproj", "{BB0DB60A-4D7A-4987-8036-87AC9AC4454D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P14-BombNumbers(List)", "P14-BombNumbers(List)\P14-BombNumbers(List).csproj", "{BB0DB60A-4D7A-4987-8036-87AC9AC4454D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
