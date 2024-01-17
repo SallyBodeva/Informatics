@@ -15,12 +15,14 @@ namespace P18_UniversityCompetition_OOP_.Models
         private int capacity;
         private List<int> requiredSubjects = new List<int>();
 
-        public University(int id, string name, string category, int capacity)
+
+        public University(int id, string name, string category, int capacity, List<int> requiredSubjects)
         {
             this.Id = id;
             this.Name = name;
             this.Category = category;
             this.Capacity = capacity;
+            this.requiredSubjects = requiredSubjects;
         }
 
         public int Id
@@ -83,6 +85,6 @@ namespace P18_UniversityCompetition_OOP_.Models
             }
         }
 
-        public IReadOnlyCollection<int> RequiredSubjects => this.requiredSubjects.AsReadOnly();
+        public IReadOnlyCollection<int> RequiredSubjects => this.requiredSubjects;
     }
 }

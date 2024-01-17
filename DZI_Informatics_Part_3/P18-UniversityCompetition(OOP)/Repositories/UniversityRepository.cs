@@ -10,7 +10,7 @@ namespace P18_UniversityCompetition_OOP_.Repositories
 {
     public class UniversityRepository : IRepository<University>
     {
-        private List<University> models;
+        private List<University> models = new List<University>();
         public IReadOnlyCollection<University> Models => models.AsReadOnly();
 
         public void AddModel(University model)
