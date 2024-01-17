@@ -39,7 +39,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P16-ItemClass", "P16-ItemCl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P17-OnlineStore", "P17-OnlineStore\P17-OnlineStore.csproj", "{93C8C3E5-966C-402A-A167-210CA5BB77DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P18-H.A.D.(OPP)", "P18-H.A.D.(OPP)\P18-H.A.D.(OPP).csproj", "{08BEB251-26CC-4C35-B5C9-B5EE0887FA97}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P18-UniversityCompetition(OOP)", "P18-UniversityCompetition(OOP)\P18-UniversityCompetition(OOP).csproj", "{C507ED59-3CF5-41ED-97A1-19F50D97B8B4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -119,10 +119,10 @@ Global
 		{93C8C3E5-966C-402A-A167-210CA5BB77DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93C8C3E5-966C-402A-A167-210CA5BB77DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93C8C3E5-966C-402A-A167-210CA5BB77DF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{08BEB251-26CC-4C35-B5C9-B5EE0887FA97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{08BEB251-26CC-4C35-B5C9-B5EE0887FA97}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{08BEB251-26CC-4C35-B5C9-B5EE0887FA97}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{08BEB251-26CC-4C35-B5C9-B5EE0887FA97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C507ED59-3CF5-41ED-97A1-19F50D97B8B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C507ED59-3CF5-41ED-97A1-19F50D97B8B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C507ED59-3CF5-41ED-97A1-19F50D97B8B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C507ED59-3CF5-41ED-97A1-19F50D97B8B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
