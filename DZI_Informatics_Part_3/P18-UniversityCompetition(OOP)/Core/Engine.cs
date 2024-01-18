@@ -1,5 +1,6 @@
 ﻿namespace UniversityCompetition.Core
 {
+    using P18_UniversityCompetition_OOP_.Core;
     using System;
     using System.Collections.Generic;
     using System.Linq;
@@ -18,7 +19,7 @@
         {
             this.reader = new Reader();
             this.writer = new Writer();
-            //this.controller = new Controller();
+            this.controller = new Controller();
         }
 
         public void Run()

@@ -11,9 +11,9 @@ namespace P18_UniversityCompetition_OOP_.Core
 {
     public class Controller : IController
     {
-        private StudentRepository students;
-        private SubjectRepository subjects;
-        private UniversityRepository universities;
+        private StudentRepository students = new StudentRepository();
+        private SubjectRepository subjects = new SubjectRepository();
+        private UniversityRepository universities = new UniversityRepository();
         public string AddStudent(string firstName, string lastName)
         {
             string fullName = firstName + ' ' + lastName;
@@ -21,7 +21,7 @@ namespace P18_UniversityCompetition_OOP_.Core
             {
                 return $"{firstName} {lastName} is already added in the repository.";
             }
-            Student s = new Student(students.Models.Count-1, firstName, lastName);
+            Student s = new Student(students.Models.Count+1, firstName, lastName);
             students.AddModel(s);
             return $"Student {firstName} {lastName} is added to the {nameof(StudentRepository)}!";
         }
@@ -36,13 +36,13 @@ namespace P18_UniversityCompetition_OOP_.Core
             switch (subjectType)
             {
                 case nameof(EconomicalSubject):
-                    s = new EconomicalSubject(subjects.Models.Count - 1, subjectName);
+                    s = new EconomicalSubject(subjects.Models.Count + 1, subjectName);
                     break;
                 case nameof(TechnicalSubject):
-                    s = new TechnicalSubject(subjects.Models.Count - 1, subjectName);
+                    s = new TechnicalSubject(subjects.Models.Count + 1, subjectName);
                     break;
                 case nameof(HumanitySubject):
-                    s = new HumanitySubject(subjects.Models.Count - 1, subjectName);
+                    s = new HumanitySubject(subjects.Models.Count + 1, subjectName);
                     break;
                 default:
                     return $"Subject type {subjectType} is not available in the application!";
@@ -64,7 +64,7 @@ namespace P18_UniversityCompetition_OOP_.Core
                 int id = subjects.FindByName(sub).Id;
                 requiredSubjectsId.Add(id);
             }
-            University u = new University(universities.Models.Count - 1, universityName, category, capacity,requiredSubjectsId);
+            University u = new University(universities.Models.Count + 1, universityName, category, capacity,requiredSubjectsId);
             universities.AddModel(u);
             return $"{universityName} university is created and added to the {nameof(UniversityRepository)}!";
         }
