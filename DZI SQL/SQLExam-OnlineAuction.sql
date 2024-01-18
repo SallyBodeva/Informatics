@@ -63,3 +63,20 @@ CREATE TABLE Bids
 			FOREIGN KEY (person_id)
 			REFERENCES persons(id)
 );
+
+--Queries
+
+SELECT id,CONCAT_WS(' ',first_name,last_name) AS 'Full_name', YEAR(birthdate) AS 'Birth_year' FROM Persons
+WHERE city_id=42 AND YEAR(birthdate)>1970
+ORDER BY YEAR(birthdate) ASC, CONCAT_WS(' ',first_name,last_name);
+
+SELECT p.Id,p.name AS 'product_name', start_bid_price,pt.name FROM Products AS p
+JOIN Product_types AS pt ON p.product_type_id= pt.Id
+WHERE sold_on IS NULL
+ORDER BY start_bid_price ASC;
+
+SELECT pro.Id,pro.name,p.first_name,p.last_name,c.name,c.country_name FROM Persons AS p
+JOIN Products AS pro ON p.Id= pro.owner_id
+JOIN Cities AS c ON c.Id= pro.sold_city_id
+WHERE p.first_name='Britni ' AND c.country_name='Germany'
+ORDER BY pro.Id;
