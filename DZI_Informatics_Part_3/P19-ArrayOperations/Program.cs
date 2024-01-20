@@ -8,16 +8,8 @@ namespace P19_ArrayOperations
     {
         static void Main()
         {
-            int[] nums = Console.ReadLine().Split(" ").Select(int.Parse).ToArray();
-            int rotationCount = int.Parse(Console.ReadLine());
-
-            for (int i = 0; i < rotationCount; i++)
-            {
-                int t = nums[nums.Length-1];
-                nums[nums.Length - 1] = nums[0];
-                nums[0] = t;
-            }
-            Console.WriteLine(string.Join(" ",nums));
+            string[] test = { "test1", "test2", "test3" };
+            Console.WriteLine(string.Join(", ",ArrayMethods.RandomBoolArray(15)));
         }
 
         private static void CommonElements()
