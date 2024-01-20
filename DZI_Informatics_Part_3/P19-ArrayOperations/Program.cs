@@ -8,8 +8,8 @@ namespace P19_ArrayOperations
     {
         static void Main()
         {
-            string[] test = { "test1", "test2", "test3" };
-            Console.WriteLine(string.Join(", ",ArrayMethods.RandomBoolArray(15)));
+            int[] elements = { -5, 32};
+            Console.WriteLine(ArrayMethods.SumOfAbsValues(elements));
         }
 
         private static void CommonElements()

@@ -50,5 +50,62 @@ namespace P19_ArrayOperations
             }
             return array;
         }
+        public static int MaxElement(int[] array)
+        {
+            int max = int.MinValue;
+            for (int i = 0; i < array.Length; i++)
+            {
+                if (array[i]>max)
+                {
+                    max = array[i];
+                }
+            }
+            return max;
+        }
+        public static int SecondMaxElement(int[] array)
+        {
+            int max = int.MinValue;
+            int secondMax = int.MinValue;
+            for (int i = 0; i < array.Length; i++)
+            {
+                if (array[i] > max)
+                {
+                    secondMax = max;
+                    max = array[i];
+                }
+                else if (array[i] > secondMax && array[i] < max)
+                {
+                    secondMax = array[i];
+                }
+            }
+            return secondMax;
+        }
+        public static double AverageValue(int[] array)
+        {
+            int length = array.Length;
+            int sum = 0;
+            for (int i = 0; i < array.Length; i++)
+            {
+                sum += array[i];
+            }
+            return (double)sum / length;
+        }
+        public static int SumOfAbsValues(int[] array)
+        {
+            int sum = 0;
+            for (int i = 0; i < array.Length; i++)
+            {
+                if (array[i]>=0)
+                {
+                    sum += array[i];
+                }
+                else
+                {
+                    sum += array[i] * (-1);
+                }
+            }
+            return sum;
+        }
+
     }
 }
