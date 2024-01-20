@@ -8,8 +8,10 @@ namespace P19_ArrayOperations
     {
         static void Main()
         {
-            int[] elements = { -5, 32};
-            Console.WriteLine(ArrayMethods.SumOfAbsValues(elements));
+            int[] elements = {4,8,7,2};
+            int[] elements2 = {1,2,3,4,5};
+
+            Console.WriteLine(string.Join(" ", ArrayMethods.IncreasedWithN(2,elements,elements2)));
         }
 
         private static void CommonElements()
