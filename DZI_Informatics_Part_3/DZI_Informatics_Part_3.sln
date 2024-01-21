@@ -41,7 +41,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P17-OnlineStore", "P17-Onli
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P18-UniversityCompetition(OOP)", "P18-UniversityCompetition(OOP)\P18-UniversityCompetition(OOP).csproj", "{C507ED59-3CF5-41ED-97A1-19F50D97B8B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P19-ArrayOperations", "P19-ArrayOperations\P19-ArrayOperations.csproj", "{3CDFFC98-1433-4FFF-9180-236F08DCADE4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P19-ArrayOperations", "P19-ArrayOperations\P19-ArrayOperations.csproj", "{3CDFFC98-1433-4FFF-9180-236F08DCADE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P20-ListOperations", "P20-ListOperations\P20-ListOperations.csproj", "{B46989F0-A6C6-4185-86A1-0F29A9FF770D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -129,6 +131,10 @@ Global
 		{3CDFFC98-1433-4FFF-9180-236F08DCADE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3CDFFC98-1433-4FFF-9180-236F08DCADE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3CDFFC98-1433-4FFF-9180-236F08DCADE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B46989F0-A6C6-4185-86A1-0F29A9FF770D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B46989F0-A6C6-4185-86A1-0F29A9FF770D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B46989F0-A6C6-4185-86A1-0F29A9FF770D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B46989F0-A6C6-4185-86A1-0F29A9FF770D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
