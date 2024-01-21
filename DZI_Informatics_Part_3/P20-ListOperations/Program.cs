@@ -1,41 +1,12 @@
-﻿namespace P20_ListOperations
+﻿using System.Runtime.CompilerServices;
+
+namespace P20_ListOperations
 {
     public class Program
     {
         static void Main()
         {
-
-        }
-
-        private static void ChangeList()
-        {
-            List<int> nums = Console.ReadLine().Split(" ").Select(int.Parse).ToList();
-            string[] commands;
-            while (true)
-            {
-                commands = Console.ReadLine().Split(" ");
-                string operation = commands[0];
-                if (operation == "end")
-                {
-                    break;
-                }
-                switch (operation)
-                {
-                    case "Delete":
-                        while (nums.Contains(int.Parse(commands[1])))
-                        {
-                            nums.Remove(int.Parse(commands[1]));
-                        }
-                        break;
-
-                    case "Insert":
-                        int element = int.Parse(commands[1]);
-                        int index = int.Parse(commands[2]);
-                        nums.Insert(index, element);
-                        break;
-                }
-            }
-            Console.WriteLine(string.Join(" ", nums));
+            Train();
         }
 
         private static void Train()
@@ -59,18 +30,19 @@
                     int passengers = int.Parse(cmd[0]);
                     for (int i = 0; i < wagons.Count; i++)
                     {
-                        if (wagons[i] + passengers < maxPassengers)
+                        if (wagons[i] + passengers <= maxPassengers)
                         {
                             wagons[i] += passengers;
                         }
                         else
                         {
-                            //TODO
-
+                            wagons[i] += maxPassengers - wagons[i];
+                            passengers-= maxPassengers - wagons[i];
                         }
                     }
                 }
             }
+            Console.WriteLine(string.Join(" ",wagons));
         }
     }
 }
