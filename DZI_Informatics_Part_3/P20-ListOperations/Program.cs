@@ -7,6 +7,7 @@ namespace P20_ListOperations
         static void Main()
         {
             Train();
+            //TODO
         }
 
         private static void Train()
