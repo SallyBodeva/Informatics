@@ -8,16 +8,6 @@ namespace P19_ArrayOperations
 {
     public static class ArrayMethods
     {
-        public static string PrintArray(string[] array, string separator)
-        {
-            StringBuilder sb = new StringBuilder();
-            for (int i = 0; i < array.Length-1; i++)
-            {
-                sb.Append($"{array[i]}{separator}");
-            }
-            sb.Append(array[array.Length-1]);
-            return sb.ToString().TrimEnd();
-        }
         public static int[] RandomIntArray(int n, int min, int max)
         {
             int[] array = new int[n];
@@ -241,6 +231,16 @@ namespace P19_ArrayOperations
                 insertIndex++;
             }
             return newArray;
+        }
+        public static string PrintArray(string[] array, string separator)
+        {
+            StringBuilder sb = new StringBuilder();
+            for (int i = 0; i < array.Length - 1; i++)
+            {
+                sb.Append($"{array[i]}{separator}");
+            }
+            sb.Append(array[array.Length - 1]);
+            return sb.ToString().TrimEnd();
         }
 
 
