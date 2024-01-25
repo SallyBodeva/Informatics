@@ -4,12 +4,9 @@
     {
         static void Main()
         {
-            int wire = 100;
-            List<int> elements = new List<int>{ 2, 5, 20, 50 };
-            while (true)
-            {
-                
-            }
+            AverageOfGreaterThanK();
+            SumOfDigit();
+            Triangle();
         }
 
         private static void Triangle()
