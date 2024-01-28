@@ -47,7 +47,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P20-ListOperations", "P20-L
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P21-AddinitonalExercises", "P21-AddinitonalExercieses\P21-AddinitonalExercises.csproj", "{8BF849BE-572F-43E7-994E-E8820F023555}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P22-TheGambler(Matrix)", "P22-TheGambler(Matrix)\P22-TheGambler(Matrix).csproj", "{DCFC36D8-7F8F-49C1-9D69-A42481750672}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P22-TheGambler(Matrix)", "P22-TheGambler(Matrix)\P22-TheGambler(Matrix).csproj", "{DCFC36D8-7F8F-49C1-9D69-A42481750672}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P23-Zad28(DZI(26.08.2022))", "P23-Zad28(DZI(26.08.2022))\P23-Zad28(DZI(26.08.2022)).csproj", "{C2D5F0DB-8B94-4987-9416-0BFD9AD110FA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -147,6 +149,10 @@ Global
 		{DCFC36D8-7F8F-49C1-9D69-A42481750672}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DCFC36D8-7F8F-49C1-9D69-A42481750672}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DCFC36D8-7F8F-49C1-9D69-A42481750672}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2D5F0DB-8B94-4987-9416-0BFD9AD110FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2D5F0DB-8B94-4987-9416-0BFD9AD110FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2D5F0DB-8B94-4987-9416-0BFD9AD110FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2D5F0DB-8B94-4987-9416-0BFD9AD110FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
