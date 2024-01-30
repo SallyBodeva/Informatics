@@ -4,10 +4,31 @@
     {
         static void Main()
         {
-            int[,] matrix = ReadMatix();
+            int[,] matrix = {
+            {1, 2, 3, 4},
+            {5, 6, 7, 8},
+            {9, 10, 11, 12},
+            {13, 14, 15, 16}
+        };
+
             PrintMatrix(matrix);
-
-
+            PrintMatrix(Rotate(matrix));
+        }
+        public static int[,] Rotate(int[,] matrix)
+        {
+            int i = 0;
+            int[,] newMatrix = new int[matrix.GetLength(0), matrix.GetLength(1)];
+            for (int row = 0; row < matrix.GetLength(0); row++)
+            {
+                int j = 0;
+                for (int col = 0; col < matrix.GetLength(1); col++)
+                {
+                    newMatrix[col, 3-row] = matrix[row,col];
+                    j++;
+                }
+                i++;
+            }
+            return newMatrix;
         }
         public static int[,] ReadMatix()
         {
