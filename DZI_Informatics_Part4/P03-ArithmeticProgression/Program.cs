@@ -15,7 +15,7 @@
                 int aOdd = nums[i] * 2;
                 nums.Add(aOdd);
             }
-            Console.WriteLine(nums[n-1]);
+            Console.WriteLine(nums[n - 1]);
         }
     }
 }

@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01-RotateMatrix", "P01-Rot
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02-DifferenceOfAbsValue", "P02-DifferenceOfAbsValue\P02-DifferenceOfAbsValue.csproj", "{1449AD19-E344-409B-A6E8-8B4D0719F338}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03-ArithmeticProgression", "P04-ArithmeticProgression\P03-ArithmeticProgression.csproj", "{1D8F3603-2734-4919-A4A1-4B485D54BBFA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03-ArithmeticProgression", "P03-ArithmeticProgression\P03-ArithmeticProgression.csproj", "{CA5FFE7B-0CD5-4CC9-8A74-5BAC18ABB3A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{1449AD19-E344-409B-A6E8-8B4D0719F338}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1449AD19-E344-409B-A6E8-8B4D0719F338}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1449AD19-E344-409B-A6E8-8B4D0719F338}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1D8F3603-2734-4919-A4A1-4B485D54BBFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1D8F3603-2734-4919-A4A1-4B485D54BBFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1D8F3603-2734-4919-A4A1-4B485D54BBFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1D8F3603-2734-4919-A4A1-4B485D54BBFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA5FFE7B-0CD5-4CC9-8A74-5BAC18ABB3A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA5FFE7B-0CD5-4CC9-8A74-5BAC18ABB3A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA5FFE7B-0CD5-4CC9-8A74-5BAC18ABB3A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA5FFE7B-0CD5-4CC9-8A74-5BAC18ABB3A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
