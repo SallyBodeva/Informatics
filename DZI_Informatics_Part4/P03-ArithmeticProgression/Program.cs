@@ -1,4 +1,4 @@
-﻿namespace P04_ArithmeticProgression
+﻿namespace P03_ArithmeticProgression
 {
     internal class Program
     {

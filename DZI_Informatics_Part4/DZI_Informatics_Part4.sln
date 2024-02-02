@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01-RotateMatrix", "P01-Rot
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02-DifferenceOfAbsValue", "P02-DifferenceOfAbsValue\P02-DifferenceOfAbsValue.csproj", "{1449AD19-E344-409B-A6E8-8B4D0719F338}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04-ArithmeticProgression", "P04-ArithmeticProgression\P04-ArithmeticProgression.csproj", "{1D8F3603-2734-4919-A4A1-4B485D54BBFA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03-ArithmeticProgression", "P04-ArithmeticProgression\P03-ArithmeticProgression.csproj", "{1D8F3603-2734-4919-A4A1-4B485D54BBFA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
