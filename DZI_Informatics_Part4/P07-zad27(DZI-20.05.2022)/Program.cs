@@ -1,12 +1,22 @@
-﻿namespace P07_zad27_DZI_20._05._2022_
+﻿using System.Collections;
+
+namespace P07_zad27_DZI_20._05._2022_
 {
-    internal class Program
+    internal class Program 
     {
         static void Main(string[] args)
         {
-            List<int> nums = new List<int> { 51, 91 };
-            List<int> newNums = DividedByK(nums, 3);
-            Console.WriteLine(string.Join(" ",newNums));
+            Console.Write("Въведете име на файл:");
+            string fileName = Console.ReadLine();
+            Console.Write("Въведете цяло число К:");
+            int k = int.Parse(Console.ReadLine());
+
+            List<int> list = ReadList(fileName);
+            List<int> newList = DividedByK(list, k);
+            OrderBySum(newList);
+            Console.WriteLine(string.Join(" ",newList));
+
+
         }
         public static List<int> DividedByK(List<int> list, int k)
         {
@@ -37,6 +47,39 @@
             }
             return list;
         }
+        public static void OrderBySum(List<int> list)
+        {
+            list.Sort((x,y)=>SumOfDigitd(x).CompareTo(SumOfDigitd(y)));
+        }
 
+        public static int SumOfDigitd(int x)
+        {
+            int sum = 0;
+            while (x > 0)
+            {
+                int digit = x % 10;
+                sum += digit;
+                x /= 10;
+            }
+            return sum;
+        }
+        public static List<int> ReadList(string path)
+        {
+            List<int> nums = new List<int>();
+            StreamReader sr = new StreamReader(path);
+            using (sr)
+            {
+                while (true)
+                {
+                    string line = sr.ReadLine();
+                    if (line == null)
+                    {
+                        break;
+                    }
+                    nums.Add(int.Parse(line));
+                }
+            }
+            return nums;
+        }
     }
 }
