@@ -31,7 +31,5 @@
             return firstSymbols;
         }
 
-
-        //TODO
     }
 }
