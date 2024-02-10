@@ -21,7 +21,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P08-EncryptWord", "P08-Encr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P09-StringOperation", "P09-StringOperation\P09-StringOperation.csproj", "{87F0A47C-A02C-4D91-82FE-D28BC3948645}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P10-FishingCompetition", "P10-FishingCompetition\P10-FishingCompetition.csproj", "{0098DF03-669B-401B-9995-CF0F3E7C2A58}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P10-FishingCompetition", "P10-FishingCompetition\P10-FishingCompetition.csproj", "{0098DF03-669B-401B-9995-CF0F3E7C2A58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P11-ExtensionsAndTheirCount", "P11-ExtensionsAndTheirCount\P11-ExtensionsAndTheirCount.csproj", "{48FE712A-BE36-4A7B-906E-C398111F9634}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{0098DF03-669B-401B-9995-CF0F3E7C2A58}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0098DF03-669B-401B-9995-CF0F3E7C2A58}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0098DF03-669B-401B-9995-CF0F3E7C2A58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48FE712A-BE36-4A7B-906E-C398111F9634}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48FE712A-BE36-4A7B-906E-C398111F9634}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48FE712A-BE36-4A7B-906E-C398111F9634}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48FE712A-BE36-4A7B-906E-C398111F9634}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
