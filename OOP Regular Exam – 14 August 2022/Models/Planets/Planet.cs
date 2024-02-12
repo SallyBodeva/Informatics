@@ -1,5 +1,7 @@
-﻿using PlanetWars.Models.MilitaryUnits.Contracts;
+﻿using PlanetWars.Models.MilitaryUnits;
+using PlanetWars.Models.MilitaryUnits.Contracts;
 using PlanetWars.Models.Planets.Contracts;
+using PlanetWars.Models.Weapons;
 using PlanetWars.Models.Weapons.Contracts;
 using PlanetWars.Repositories;
 using System;
@@ -15,6 +17,14 @@ namespace PlanetWars.Models.Planets
         private WeaponRepository weapons = new WeaponRepository();
         private string name;
         private double budget;
+        private readonly double militaryPower;
+        private readonly IReadOnlyCollection<IMilitaryUnit> army;
+
+        public Planet(string name, double budget)
+        {
+            this.Name = name;
+            this.Budget = budget;
+        }
 
         public string Name
         {
@@ -42,49 +52,88 @@ namespace PlanetWars.Models.Planets
             }
         }
 
-        public double MilitaryPower { get; set; }
+        public double MilitaryPower
+        {
+            get
+            {
+                return this.MilitaryPowerCalculation() ;
+            }
+        }
 
-        public IReadOnlyCollection<IMilitaryUnit> Army { get; set; }
+        public IReadOnlyCollection<IMilitaryUnit> Army
+        {
+            get
+            {
+                return units.Models;
+            }
+        }
 
-        public IReadOnlyCollection<IWeapon> Weapons { get; set; }
+        public IReadOnlyCollection<IWeapon> Weapons
+        {
+            get
+            {
+                return weapons.Models;
+            }
+        }
 
         private double MilitaryPowerCalculation()
         {
             double totalSum = weapons.Models.Sum(x => x.DestructionLevel) + units.Models.Sum(x => x.EnduranceLevel);
-            if ())
+            IMilitaryUnit unit = this.units.FindByName(nameof(AnonymousImpactUnit));
+            if (unit!=null)
             {
-
+                totalSum += 1.3 * totalSum;
             }
+            IWeapon weapon = this.weapons.FindByName(nameof(NuclearWeapon));
+            if (weapon!=null)
+            {
+                totalSum += 1.45 * totalSum;
+            }
+            return Math.Round(totalSum, 3);
         }
 
         public void AddUnit(IMilitaryUnit unit)
         {
-            throw new NotImplementedException();
+            this.units.AddItem(unit);
         }
 
         public void AddWeapon(IWeapon weapon)
         {
-            throw new NotImplementedException();
+            this.weapons.AddItem(weapon);
         }
 
         public string PlanetInfo()
         {
-            throw new NotImplementedException();
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine($"Planet: {this.Name}");
+            sb.AppendLine($"--Budget: {this.budget} billion QUID");
+            string forces = (this.units.Models.Any()) ? string.Join(" ", units.Models) : "No forces";
+            sb.AppendLine($"--Forces: {forces}");
+            string euipment = (this.weapons.Models.Any()) ? string.Join(" ", weapons.Models) : "No weapons";
+            sb.AppendLine($"--Combat equipment: {euipment}");
+            return sb.ToString().TrimEnd();
         }
 
         public void Profit(double amount)
         {
-            throw new NotImplementedException();
+            this.budget += amount;
         }
 
         public void Spend(double amount)
         {
-            throw new NotImplementedException();
+            if (this.budget<amount)
+            {
+                throw new ArgumentException(Utilities.Messages.ExceptionMessages.UnsufficientBudget);
+            }
+            this.budget -= amount;
         }
 
         public void TrainArmy()
         {
-            throw new NotImplementedException();
+            foreach (var item in this.Army)
+            {
+                item.IncreaseEndurance();
+            }
         }
     }
 }
