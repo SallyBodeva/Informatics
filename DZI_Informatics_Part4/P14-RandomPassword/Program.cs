@@ -14,7 +14,6 @@
             {
                 password[r.Next(0,length-1)] = 
             }
-            //TODO
 
         }
     }
