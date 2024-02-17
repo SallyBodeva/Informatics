@@ -31,7 +31,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P13-UCN", "P13-UCN\P13-UCN.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P14-RandomPassword", "P14-RandomPassword\P14-RandomPassword.csproj", "{A0F04DD8-F5B8-4C9C-98EE-95E17E206FAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P15-SortingAlgorithms", "P15-SortingAlgorithms\P15-SortingAlgorithms.csproj", "{FB6CB161-F123-4E82-8A4A-CC6B39804384}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P15-SortingAlgorithms", "P15-SortingAlgorithms\P15-SortingAlgorithms.csproj", "{FB6CB161-F123-4E82-8A4A-CC6B39804384}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P16-SharkTaxonomy", "P16-SharkTaxonomy\P16-SharkTaxonomy.csproj", "{E6A6771E-09EC-43D6-8578-E141B2B7815F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +101,10 @@ Global
 		{FB6CB161-F123-4E82-8A4A-CC6B39804384}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB6CB161-F123-4E82-8A4A-CC6B39804384}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB6CB161-F123-4E82-8A4A-CC6B39804384}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6A6771E-09EC-43D6-8578-E141B2B7815F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6A6771E-09EC-43D6-8578-E141B2B7815F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6A6771E-09EC-43D6-8578-E141B2B7815F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6A6771E-09EC-43D6-8578-E141B2B7815F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
