@@ -110,5 +110,37 @@ namespace P24_MatrixManipulation
         {
             return Math.Abs((SumFirstMainDiagonal(matrix)-SumSecMainDiagonal(matrix)));
         }
+        public static bool IsTriangleByMainDiagonal(int[,] matrix)
+        {
+            for (int i = 0; i < matrix.GetLength(0); i++)
+            {
+                for (int j = 0; j < matrix.GetLength(1); j++)
+                {
+                    if (i>j && matrix[i, j] != 0)
+                    {
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
+        public static bool IsTriangleBySecMainDiagonal(int[,] matrix)
+        {
+            for (int i = 0; i < matrix.GetLength(0); i++)
+            {
+                for (int j = 0; j < matrix.GetLength(1); j++)
+                {
+                    if (i < j && matrix[i, j] != 0)
+                    {
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
+        public static bool IsTriangle(int[,] matrix)
+        {
+            return IsTriangleByMainDiagonal(matrix) || IsTriangleBySecMainDiagonal(matrix);
+        }
     }
 }
