@@ -7,9 +7,14 @@ namespace P24_MatrixManipulation
     {
         static void Main()
         {
-            int[,] matrix = ReadMatrix(@"C:\Users\EliteBook\Desktop\test.txt");
-            Console.WriteLine(IsSymmetric(matrix));
-            Console.WriteLine(DiagonalDiff(matrix));
+            string path = Console.ReadLine();
+            int[,] matrix = ReadMatrix(path);
+            string isTriangleInfo = IsTriangle(matrix) ? "The matrix is triangle." : "The matrix is not triangle.";
+            string isSymmetricInfo = IsSymmetric(matrix) ? "The matrix is symmetric." : "The matrix is not symmetric.";
+
+            Console.WriteLine(isTriangleInfo);
+            Console.WriteLine(isSymmetricInfo);
+            Console.WriteLine($"Difference: {DiagonalDiff(matrix)}");
         }
         public static int[,] ReadMatrix(string pathName)
         {
@@ -120,6 +125,7 @@ namespace P24_MatrixManipulation
                     {
                         return false;
                     }
+                   
                 }
             }
             return true;
