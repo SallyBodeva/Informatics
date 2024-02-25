@@ -49,7 +49,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P22-CountUppercaseWords", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P23-GroceryStore(OOP)", "P23-GroceryStore(OOP)\P23-GroceryStore(OOP).csproj", "{BDD7BA15-78B3-4BC6-9B83-D393647F12D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P24-MatrixManipulation", "P24-MatrixManipulation\P24-MatrixManipulation.csproj", "{52CCC03F-5152-4C7C-8030-0A9FFFA6F7AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P24-MatrixManipulation", "P24-MatrixManipulation\P24-MatrixManipulation.csproj", "{52CCC03F-5152-4C7C-8030-0A9FFFA6F7AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P25-DivideAndRule", "P25-DivideAndRule\P25-DivideAndRule.csproj", "{A7157ABC-39A7-4786-83A7-4960A14B0537}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -153,6 +155,10 @@ Global
 		{52CCC03F-5152-4C7C-8030-0A9FFFA6F7AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{52CCC03F-5152-4C7C-8030-0A9FFFA6F7AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{52CCC03F-5152-4C7C-8030-0A9FFFA6F7AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7157ABC-39A7-4786-83A7-4960A14B0537}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7157ABC-39A7-4786-83A7-4960A14B0537}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7157ABC-39A7-4786-83A7-4960A14B0537}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7157ABC-39A7-4786-83A7-4960A14B0537}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

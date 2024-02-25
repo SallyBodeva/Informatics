@@ -5,29 +5,19 @@
         static void Main(string[] args)
         {
             int n = int.Parse(Console.ReadLine());
-            int k = 0;
-
-            int[] gifts = new int[n * 2];
-            GiftStoring(n, gifts);
-            int index = 0;
-            while (gifts.Contains(1))
-            {
-
-            }
+            int[] gifts = new int[n*2];
             
         }
 
-        private static void GiftStoring(int n, int[] gifts)
+        private static void GiftStoring(int[] gifts, int n = 1)
         {
-            for (int i = 0; i < n; i++)
+            for (int i = 0; i < gifts.Length; i++)
             {
-                gifts[i] = 0;
+                if (gifts[i]+1)
+                {
+
+                }
             }
-            for (int i = n; i < n * 2; i++)
-            {
-                gifts[i] = 1;
-            }
-            Console.WriteLine(string.Join(" ", gifts));
         }
     }
 }
