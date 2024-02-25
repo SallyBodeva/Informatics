@@ -9,15 +9,15 @@
             
         }
 
-        private static void GiftStoring(int[] gifts, int n = 1)
-        {
-            for (int i = 0; i < gifts.Length; i++)
-            {
-                if (gifts[i]+1)
-                {
+        //private static void GiftStoring(int[] gifts, int n = 1)
+        //{
+        //    for (int i = 0; i < gifts.Length; i++)
+        //    {
+        //        if (gifts[i]+1)
+        //        {
 
-                }
-            }
-        }
+        //        }
+        //    }
+        //}
     }
 }
