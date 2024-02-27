@@ -60,14 +60,19 @@
         public static List<int> SpecificCustimSort(List<int> nums)
         {
             List<int> evenNums = nums.Where(x => x % 2 == 0).OrderBy(x => x).ToList();
+            nums.RemoveAll(x => x % 2 == 0);
             List<int> divisibleBy3 =  nums.Where(x => x % 3 == 0).OrderBy(x => x).ToList();
+            nums.RemoveAll(x => x % 3 == 0);
             List<int> divisibleBy5 = nums.Where(x => x % 5 == 0).OrderBy(x => x).ToList();
-            List<int> divisibleBy7 = nums.Where(x => x % 3 == 0).OrderBy(x => x).ToList();
+            nums.RemoveAll(x => x % 5 == 0);
+            List<int> divisibleBy7 = nums.Where(x => x % 7 == 0).OrderBy(x => x).ToList();
+            nums.RemoveAll(x => x % 7 == 0);
             List<int> newList = new List<int>();
             newList.AddRange(evenNums);
             newList.AddRange(divisibleBy3);
             newList.AddRange(divisibleBy5);
             newList.AddRange(divisibleBy7);
+            newList.AddRange(nums);
             return newList;
         }
     }
