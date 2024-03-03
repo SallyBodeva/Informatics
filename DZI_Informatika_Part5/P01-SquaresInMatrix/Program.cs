@@ -4,21 +4,27 @@
     {
         static void Main(string[] args)
         {
-            char[,] matrix = new char[3, 3];
+            int[] dimentions = Console.ReadLine().Split(", ").Select(int.Parse).ToArray();
+            char[,] matrix = new char[dimentions[0], dimentions[1]];
             ReadMatrix(matrix);
             PrintMatrix(matrix);
+
+            Console.WriteLine(FindBoxesInMatrix(matrix));
         }
-        private static void FindBoxesInMatrix(char[,] matrix)
+        private static int FindBoxesInMatrix(char[,] matrix)
         {
+            int count = 0;
             try
             {
                 for (int i = 0; i < matrix.GetLength(0); i++)
                 {
                     for (int j = 0; j < matrix.GetLength(1); j++)
                     {
-                        if (matrix[i,j] == matrix[i-1, j] && matrix[i, j] == matrix[i - 1, j])
+                        if (matrix[i,j] == matrix[i+1, j] && 
+                            matrix[i, j] == matrix[i, j+1] &&
+                            matrix[i, j] == matrix[i+1, j + 1])
                         {
-                            //TODO
+                            count++;
                         }
                     }
                 }
@@ -27,6 +33,7 @@
             {
 
             }
+            return count;
          
         }
 
