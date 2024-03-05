@@ -11,22 +11,23 @@
             ReadElements(board);
             while (true)
             {
-                string commmand = Console.ReadLine(); ;
-                switch (commmand)
+               // string commmand = Console.ReadLine(); ;
+                ConsoleKey k = Console.ReadKey().Key;
+                switch (k)
                 {
-                    case "up":
+                    case ConsoleKey.UpArrow:
                         Up(board);
                         break;
-                    case "down":
+                    case ConsoleKey.DownArrow:
                         Down(board);
                         break;
-                    case "right":
+                    case ConsoleKey.RightArrow:
                         Right(board);
                         break;
-                    case "left":
+                    case ConsoleKey.LeftArrow:
                         Left(board);
                         break;
-                    case "end":
+                    case ConsoleKey.Escape:
                         Console.WriteLine($"End of the game. Total amount: {money}$");
                         PrintMatrix(board);
                         Environment.Exit(0);
