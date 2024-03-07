@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01-SquaresInMatrix", "P01-
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02-MatrixShuffling", "P02-MatrixShuffling\P02-MatrixShuffling.csproj", "{F8993E0E-B892-4C8F-B738-B8CC7D70AB8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03-Zad26(DZI-2022)", "P03-Zad26(DZI-2022)\P03-Zad26(DZI-2022).csproj", "{9D420FB2-AB0D-4866-8676-109F5D948D9F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03-Zad26(DZI-2022)", "P03-Zad26(DZI-2022)\P03-Zad26(DZI-2022).csproj", "{9D420FB2-AB0D-4866-8676-109F5D948D9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04-Zad28(DZI-Aug2022)", "P04-Zad28(DZI-Aug2022)\P04-Zad28(DZI-Aug2022).csproj", "{9671DBB8-1F6C-46D9-911B-8B8883E3B92C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{9D420FB2-AB0D-4866-8676-109F5D948D9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D420FB2-AB0D-4866-8676-109F5D948D9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9D420FB2-AB0D-4866-8676-109F5D948D9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9671DBB8-1F6C-46D9-911B-8B8883E3B92C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9671DBB8-1F6C-46D9-911B-8B8883E3B92C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9671DBB8-1F6C-46D9-911B-8B8883E3B92C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9671DBB8-1F6C-46D9-911B-8B8883E3B92C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
