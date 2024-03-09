@@ -9,6 +9,9 @@
             ReadMatrix(matrix);
             PrintMatrix(matrix);
 
+
+
+
             Console.WriteLine(FindBoxesInMatrix(matrix));
         }
         private static int FindBoxesInMatrix(char[,] matrix)
