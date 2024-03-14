@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P05-Brackets", "P05-Bracket
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P06-Palindrome", "P06-Palindrome\P06-Palindrome.csproj", "{DEF37137-28F8-4398-8F1F-9A3DA014D474}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P07-PaymentSystem", "P07-PaymentSystem\P07-PaymentSystem.csproj", "{99A31025-ED92-4610-BEE2-2358C2E0B2E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P07-PaymentSystem", "P07-PaymentSystem\P07-PaymentSystem.csproj", "{99A31025-ED92-4610-BEE2-2358C2E0B2E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P08-CoffeeShop", "P08-CoffeeShop\P08-CoffeeShop.csproj", "{6FB5ABCB-6F6A-4A50-B44C-E1A04183F527}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{99A31025-ED92-4610-BEE2-2358C2E0B2E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99A31025-ED92-4610-BEE2-2358C2E0B2E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99A31025-ED92-4610-BEE2-2358C2E0B2E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FB5ABCB-6F6A-4A50-B44C-E1A04183F527}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FB5ABCB-6F6A-4A50-B44C-E1A04183F527}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FB5ABCB-6F6A-4A50-B44C-E1A04183F527}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FB5ABCB-6F6A-4A50-B44C-E1A04183F527}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
