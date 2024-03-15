@@ -51,7 +51,7 @@ namespace P08_CoffeeShop
 
         public string[] ProvideInformationAboutAllCoffees()
         {
-            return coffees.Select(x => x.ToString()).ToArray();
+            return coffees.OrderBy(x=>x.Type).Select(x => x.ToString()).ToArray();
         }
 
 

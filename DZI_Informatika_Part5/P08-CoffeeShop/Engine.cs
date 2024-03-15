@@ -43,10 +43,10 @@ public class Engine
                         result = $"Filtered coffees: {string.Join(" ",coffeeShop.FilterCoffeesByPrice(filterPrice))}";
                         break;
                     case "SortByType":
-                        coffeeShop.SortAscendingByType();
+                        result = $"First coffee is: {coffeeShop.SortAscendingByType()[0]}.";
                         break;
                     case "SortByPrice":
-                        coffeeShop.SortDescendingByPrice();
+                        result = $"The cheapest coffee is: {coffeeShop.SortDescendingByPrice().LastOrDefault()}";
                         break;
                     case "CheckCoffee":
                         string checkType = command[1];
