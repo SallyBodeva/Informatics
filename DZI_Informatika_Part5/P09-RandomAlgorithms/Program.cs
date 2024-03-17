@@ -1,7 +1,9 @@
-﻿public class StartUp
+﻿public class Program
 {
     static void Main()
     {
+     
     }
+   
 }
 
