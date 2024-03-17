@@ -17,7 +17,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P06-Palindrome", "P06-Palin
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P07-PaymentSystem", "P07-PaymentSystem\P07-PaymentSystem.csproj", "{99A31025-ED92-4610-BEE2-2358C2E0B2E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P08-CoffeeShop", "P08-CoffeeShop\P08-CoffeeShop.csproj", "{6FB5ABCB-6F6A-4A50-B44C-E1A04183F527}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P08-CoffeeShop", "P08-CoffeeShop\P08-CoffeeShop.csproj", "{6FB5ABCB-6F6A-4A50-B44C-E1A04183F527}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
