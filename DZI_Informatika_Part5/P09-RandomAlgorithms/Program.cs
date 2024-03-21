@@ -8,15 +8,14 @@
     {
         if (k == 0 || k == n)
         {
-            return 1; // Base case: combination is 1 if k is 0 or equal to n
+            return 1; 
         }
         else if (k > n)
         {
-            return 0; // Base case: combination is 0 if k is greater than n
+            return 0; 
         }
         else
         {
-            // Recursive formula for combination: C(n, k) = C(n-1, k-1) + C(n-1, k)
             return CalculateCombination(n - 1, k - 1) + CalculateCombination(n - 1, k);
         }
     }
