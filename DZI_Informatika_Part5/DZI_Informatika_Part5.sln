@@ -21,7 +21,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P08-CoffeeShop", "P08-Coffe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P09-RandomAlgorithms", "P09-RandomAlgorithms\P09-RandomAlgorithms.csproj", "{D0EC4D3D-8934-422D-B667-8FFEA9479569}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P10-Brackets", "P10-Brackets\P10-Brackets.csproj", "{953521BD-F1BD-47F6-9BE0-05C14456302D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P10-Brackets", "P10-Brackets\P10-Brackets.csproj", "{953521BD-F1BD-47F6-9BE0-05C14456302D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P11-Crossroads", "P11-Crossroads\P11-Crossroads.csproj", "{176955F0-321C-4DD8-9161-928CFA90CEF2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{953521BD-F1BD-47F6-9BE0-05C14456302D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{953521BD-F1BD-47F6-9BE0-05C14456302D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{953521BD-F1BD-47F6-9BE0-05C14456302D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{176955F0-321C-4DD8-9161-928CFA90CEF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{176955F0-321C-4DD8-9161-928CFA90CEF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{176955F0-321C-4DD8-9161-928CFA90CEF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{176955F0-321C-4DD8-9161-928CFA90CEF2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
