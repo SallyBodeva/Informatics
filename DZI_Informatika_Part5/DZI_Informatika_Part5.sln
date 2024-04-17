@@ -45,9 +45,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P19-Registration", "P19-Reg
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P20-TheImitationGame", "P20-TheImitationGame\P20-TheImitationGame.csproj", "{E776DF2A-B216-4778-BED8-8800D79D424D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P21-WorldTour", "P21-WorldTour\P21-WorldTour.csproj", "{4CAA708B-94F0-4BCF-AD90-0CEC2B867777}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P21-WorldTour", "P21-WorldTour\P21-WorldTour.csproj", "{4CAA708B-94F0-4BCF-AD90-0CEC2B867777}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P22-SecretChat", "P22-SecretChat\P22-SecretChat.csproj", "{4E62604F-4B33-43AF-8005-3D7D338D46EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P22-SecretChat", "P22-SecretChat\P22-SecretChat.csproj", "{4E62604F-4B33-43AF-8005-3D7D338D46EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P23-RowInPascal'sTriangle", "P23-RowInPascal'sTriangle\P23-RowInPascal'sTriangle.csproj", "{6848F6D4-CD5A-42EA-8297-DA49641954CD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -147,6 +149,10 @@ Global
 		{4E62604F-4B33-43AF-8005-3D7D338D46EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E62604F-4B33-43AF-8005-3D7D338D46EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E62604F-4B33-43AF-8005-3D7D338D46EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6848F6D4-CD5A-42EA-8297-DA49641954CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6848F6D4-CD5A-42EA-8297-DA49641954CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6848F6D4-CD5A-42EA-8297-DA49641954CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6848F6D4-CD5A-42EA-8297-DA49641954CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
