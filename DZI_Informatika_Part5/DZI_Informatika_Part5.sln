@@ -61,9 +61,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P27-ExtractFile", "P27-Extr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P28-CharacterMultiplier", "P28-CharacterMultiplier\P28-CharacterMultiplier.csproj", "{A13325CA-196C-4ED3-B352-F7D56C8D2B7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P29-ShoppingList", "P29-ShoppingList\P29-ShoppingList.csproj", "{8B1DA597-996C-48DB-89EE-82C22874C314}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P29-ShoppingList", "P29-ShoppingList\P29-ShoppingList.csproj", "{8B1DA597-996C-48DB-89EE-82C22874C314}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P30-HeartDelivery", "P30-HeartDelivery\P30-HeartDelivery.csproj", "{50B649CD-7D4F-4474-9E19-0B30D6FE7444}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P30-HeartDelivery", "P30-HeartDelivery\P30-HeartDelivery.csproj", "{50B649CD-7D4F-4474-9E19-0B30D6FE7444}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P31-zad28(Matrix)", "P31-zad28(Matrix)\P31-zad28(Matrix).csproj", "{786E2C37-B33E-4BD7-BBB6-5522376BCC8B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -195,6 +197,10 @@ Global
 		{50B649CD-7D4F-4474-9E19-0B30D6FE7444}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50B649CD-7D4F-4474-9E19-0B30D6FE7444}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50B649CD-7D4F-4474-9E19-0B30D6FE7444}.Release|Any CPU.Build.0 = Release|Any CPU
+		{786E2C37-B33E-4BD7-BBB6-5522376BCC8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{786E2C37-B33E-4BD7-BBB6-5522376BCC8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{786E2C37-B33E-4BD7-BBB6-5522376BCC8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{786E2C37-B33E-4BD7-BBB6-5522376BCC8B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
