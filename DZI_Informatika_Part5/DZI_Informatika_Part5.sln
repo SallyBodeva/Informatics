@@ -65,7 +65,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P29-ShoppingList", "P29-Sho
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P30-HeartDelivery", "P30-HeartDelivery\P30-HeartDelivery.csproj", "{50B649CD-7D4F-4474-9E19-0B30D6FE7444}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P31-zad28(Matrix)", "P31-zad28(Matrix)\P31-zad28(Matrix).csproj", "{786E2C37-B33E-4BD7-BBB6-5522376BCC8B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P31-zad28(Matrix)", "P31-zad28(Matrix)\P31-zad28(Matrix).csproj", "{786E2C37-B33E-4BD7-BBB6-5522376BCC8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P32-Exam(Stress-Test)", "P32-Exam(Stress-Test)\P32-Exam(Stress-Test).csproj", "{2D208C80-96EF-466E-BAAA-7C63B83E484F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -201,6 +203,10 @@ Global
 		{786E2C37-B33E-4BD7-BBB6-5522376BCC8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{786E2C37-B33E-4BD7-BBB6-5522376BCC8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{786E2C37-B33E-4BD7-BBB6-5522376BCC8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D208C80-96EF-466E-BAAA-7C63B83E484F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D208C80-96EF-466E-BAAA-7C63B83E484F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D208C80-96EF-466E-BAAA-7C63B83E484F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D208C80-96EF-466E-BAAA-7C63B83E484F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
