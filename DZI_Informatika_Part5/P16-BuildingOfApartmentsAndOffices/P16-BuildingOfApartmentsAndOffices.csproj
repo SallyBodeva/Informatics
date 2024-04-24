@@ -8,4 +8,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\P19-Registration\P19-Registration.csproj" />
+  </ItemGroup>
+
 </Project>

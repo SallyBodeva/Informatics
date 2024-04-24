@@ -3,13 +3,9 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
-    <RootNamespace>P22_SecretChat</RootNamespace>
+    <RootNamespace>P34_FileContect</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\P23-RowInPascal'sTriangle\P23-RowInPascal'sTriangle.csproj" />
-  </ItemGroup>
 
 </Project>

@@ -8,4 +8,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\P22-SecretChat\P22-SecretChat.csproj" />
+  </ItemGroup>
+
 </Project>
