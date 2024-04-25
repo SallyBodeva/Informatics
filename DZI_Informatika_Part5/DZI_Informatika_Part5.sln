@@ -71,7 +71,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P32-Exam(Stress-Test)", "P3
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P33-ShootForTheWin", "P33-ShootForTheWin\P33-ShootForTheWin.csproj", "{7D2339AD-254C-46C5-8040-1CE41EC85E42}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P34-FileContect", "P34-FileContect\P34-FileContect.csproj", "{B39A7CC2-13FD-4890-81DF-FA31EB2B36D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P34-FileContect", "P34-FileContect\P34-FileContect.csproj", "{B39A7CC2-13FD-4890-81DF-FA31EB2B36D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P35-Village(OOP)", "P35-Village(OOP)\P35-Village(OOP).csproj", "{3B8985DA-4F18-41D2-AE47-E9B066634DE5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -219,6 +221,10 @@ Global
 		{B39A7CC2-13FD-4890-81DF-FA31EB2B36D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B39A7CC2-13FD-4890-81DF-FA31EB2B36D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B39A7CC2-13FD-4890-81DF-FA31EB2B36D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B8985DA-4F18-41D2-AE47-E9B066634DE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B8985DA-4F18-41D2-AE47-E9B066634DE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B8985DA-4F18-41D2-AE47-E9B066634DE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B8985DA-4F18-41D2-AE47-E9B066634DE5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
