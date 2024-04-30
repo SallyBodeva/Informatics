@@ -1,0 +1,4 @@
+﻿Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Contact us at: info@example.com for more information. 
+                        For support, email support@company.org or visit.
+                        Invalid email addresses: foo@bar@baz.com, invalid_email.com
