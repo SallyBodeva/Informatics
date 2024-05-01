@@ -2,7 +2,38 @@
 {
     static void Main()
     {
-        TopIntegers();
+    }
+
+    private static void BiggestSequence()
+    {
+        int[] elements = Console.ReadLine().Split(" ").Select(int.Parse).ToArray();
+        int[] sequence = elements.Where(x => x == elements[0]).ToArray();
+        for (int i = 1; i < elements.Length; i++)
+        {
+            int[] currentSequence = elements.Where(x => x == elements[i]).ToArray();
+            if (currentSequence.Length > sequence.Length)
+            {
+                sequence = currentSequence;
+            }
+        }
+        Console.WriteLine(string.Join(" ", sequence));
+    }
+
+    private static void LeftAndRightSum()
+    {
+        int[] elements = Console.ReadLine().Split(" ").Select(int.Parse).ToArray();
+        bool isInvalid = false;
+        for (int i = 0; i < elements.Length; i++)
+        {
+            int[] leftElememts = elements.Take(i).ToArray();
+            int[] rightElememts = elements.Skip(i + 1).ToArray();
+            if (leftElememts.Sum() == rightElememts.Sum())
+            {
+                Console.WriteLine(i);
+                isInvalid = true;
+            }
+        }
+        if (!isInvalid) { Console.WriteLine("no"); }
     }
 
     private static void TopIntegers()
