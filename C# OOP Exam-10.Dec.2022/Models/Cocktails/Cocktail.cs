@@ -7,10 +7,10 @@ namespace ChristmasPastryShop.Models.Cocktails
 {
     public class Cocktail : ICocktail
     {
-        public string Name => throw new NotImplementedException();
+        public string Name { get; set; }
 
-        public string Size => throw new NotImplementedException();
+        public string Size { get; set; }
 
-        public double Price => throw new NotImplementedException();
+        public double Price { get; set; }
     }
 }
