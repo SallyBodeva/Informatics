@@ -8,18 +8,48 @@ using System.Text;
 
 namespace ChristmasPastryShop.Models.Booths
 {
-    public abstract class Booth : IBooth
+    public class Booth : IBooth
     {
-        public abstract int BoothId { get; set; }
-        public abstract int Capacity { get; set; }
-        public abstract IRepository<IDelicacy> DelicacyMenu { get; set; }
-        public abstract IRepository<ICocktail> CocktailMenu { get; set; }
-        public abstract double CurrentBill { get; set; }
-        public abstract double Turnover { get; set; }
-        public abstract bool IsReserved { get; set; }
+        private int capacity;
 
-        public abstract void ChangeStatus();
-        public abstract void Charge();
-        public abstract void UpdateCurrentBill(double amount);
+        public int BoothId { get; set; }
+
+        public int Capacity
+        {
+            get { return capacity; }
+            set
+            {
+                if (value <= 0)
+                {
+                    throw new ArgumentException("Capacity has to be greater than 0!");
+                }
+                capacity = value;
+            }
+        }
+
+        public IRepository<IDelicacy> DelicacyMenu { get; set; }
+
+        public IRepository<ICocktail> CocktailMenu { get; set; }
+
+        public double CurrentBill { get; set; } = 0;
+
+        public double Turnover { get; set; } = 0;
+
+        public bool IsReserved { get; set; }
+
+        public void ChangeStatus()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Charge()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void UpdateCurrentBill(double amount)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

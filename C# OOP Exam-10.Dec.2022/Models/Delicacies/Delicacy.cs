@@ -1,28 +1,18 @@
-﻿using ChristmasPastryShop.Models.Cocktails.Contracts;
+﻿using ChristmasPastryShop.Models.Delicacies.Contracts;
 using System;
 using System.Collections.Generic;
-using System.Drawing;
 using System.Text;
 
-namespace ChristmasPastryShop.Models.Cocktails
+namespace ChristmasPastryShop.Models.Delicacies
 {
-    public abstract class Cocktail : ICocktail
+    public abstract class Delicacy : IDelicacy
     {
         private string name;
 
-        public Cocktail(string name, string size, double price)
+        protected Delicacy(string name, double price)
         {
             this.Name = name;
-            this.Size = size;
             this.Price = price;
-            if (size == "Middle")
-            {
-                this.Price = (this.Price * 2) / 3;
-            }
-            else if (size == "Small")
-            {
-                this.Price = this.Price / 3;
-            }
         }
 
         public string Name
@@ -38,13 +28,10 @@ namespace ChristmasPastryShop.Models.Cocktails
             }
         }
 
-        public string Size { get; set; }
-
         public double Price { get; set; }
-
         public override string ToString()
         {
-            return $"{this.Name} ({this.Size}) - {this.Price:f2} lv";
+            return $"{this.Name} - {this.Price:f2} lv";
         }
     }
 }
