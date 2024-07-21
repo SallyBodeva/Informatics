@@ -1,4 +1,5 @@
 ﻿using ChristmasPastryShop.Core.Contracts;
+using ChristmasPastryShop.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -7,9 +8,12 @@ namespace ChristmasPastryShop.Core
 {
     public class Controller : IController
     {
+        private BoothRepository booths = new BoothRepository();
+
         public string AddBooth(int capacity)
         {
             throw new NotImplementedException();
+            // this.booths.AddModel
         }
 
         public string AddCocktail(int boothId, string cocktailTypeName, string cocktailName, string size)

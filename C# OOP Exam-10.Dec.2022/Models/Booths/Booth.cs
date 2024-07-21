@@ -1,9 +1,11 @@
 ﻿using ChristmasPastryShop.Models.Booths.Contracts;
+using ChristmasPastryShop.Models.Cocktails;
 using ChristmasPastryShop.Models.Cocktails.Contracts;
 using ChristmasPastryShop.Models.Delicacies.Contracts;
 using ChristmasPastryShop.Repositories.Contracts;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace ChristmasPastryShop.Models.Booths
@@ -11,6 +13,12 @@ namespace ChristmasPastryShop.Models.Booths
     public class Booth : IBooth
     {
         private int capacity;
+
+        public Booth(int boothId, int capacity)
+        {
+            this.BoothId = boothId;
+            this.Capacity = capacity;
+        }
 
         public int BoothId { get; set; }
 
@@ -39,17 +47,30 @@ namespace ChristmasPastryShop.Models.Booths
 
         public void ChangeStatus()
         {
-            throw new NotImplementedException();
+            this.IsReserved = !IsReserved;
         }
 
         public void Charge()
         {
-            throw new NotImplementedException();
+            this.Turnover += this.CurrentBill;
+            this.CurrentBill = 0;
         }
 
         public void UpdateCurrentBill(double amount)
         {
-            throw new NotImplementedException();
+            this.CurrentBill += amount;
+        }
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine($"Booth: {this.BoothId}");
+            sb.AppendLine($"Capacity: {this.Capacity}");
+            sb.AppendLine($"Turnover: {this.Turnover:f2} lv");
+            sb.AppendLine("-Cocktail menu:");
+            this.CocktailMenu.Models.ToList().ForEach(model => sb.AppendLine($"--{model.ToString()}"));
+            sb.AppendLine("-Delicacy menu:");
+            this.DelicacyMenu.Models.ToList().ForEach(model => sb.AppendLine($"--{model.ToString()}"));
+            return base.ToString();
         }
     }
 }
