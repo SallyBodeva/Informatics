@@ -2,6 +2,7 @@
 using ChristmasPastryShop.Models.Cocktails;
 using ChristmasPastryShop.Models.Cocktails.Contracts;
 using ChristmasPastryShop.Models.Delicacies.Contracts;
+using ChristmasPastryShop.Repositories;
 using ChristmasPastryShop.Repositories.Contracts;
 using System;
 using System.Collections.Generic;
@@ -18,6 +19,7 @@ namespace ChristmasPastryShop.Models.Booths
         {
             this.BoothId = boothId;
             this.Capacity = capacity;
+
         }
 
         public int BoothId { get; set; }
@@ -35,9 +37,9 @@ namespace ChristmasPastryShop.Models.Booths
             }
         }
 
-        public IRepository<IDelicacy> DelicacyMenu { get; set; }
+        public IRepository<IDelicacy> DelicacyMenu { get; set; } = new DelicacyRepository();
 
-        public IRepository<ICocktail> CocktailMenu { get; set; }
+        public IRepository<ICocktail> CocktailMenu { get; set; } = new CocktailRepository();
 
         public double CurrentBill { get; set; } = 0;
 
