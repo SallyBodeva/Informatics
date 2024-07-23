@@ -86,6 +86,8 @@ namespace ChristmasPastryShop.Core
         public string BoothReport(int boothId)
         {
             throw new NotImplementedException();
+            // TO DO
+
         }
 
         public string LeaveBooth(int boothId)
