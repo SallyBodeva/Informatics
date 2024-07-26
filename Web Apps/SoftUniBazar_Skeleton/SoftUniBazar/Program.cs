@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Identity;
+using Microsoft.CodeAnalysis.Options;
 using Microsoft.EntityFrameworkCore;
 using SoftUniBazar.Data;
 
@@ -10,7 +11,14 @@ builder.Services.AddDbContext<BazarDbContext>(options =>
     options.UseSqlServer(connectionString));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+builder.Services.AddDefaultIdentity<IdentityUser>
+    (options =>
+    {
+        options.SignIn.RequireConfirmedAccount = false;
+        options.Password.RequireDigit = false;
+        options.Password.RequireUppercase = false;
+        options.Password.RequireNonAlphanumeric = false;
+    })
     .AddEntityFrameworkStores<BazarDbContext>();
 builder.Services.AddControllersWithViews();
 
