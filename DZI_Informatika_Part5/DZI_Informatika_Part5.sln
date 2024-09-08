@@ -75,7 +75,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P34-FileContect", "P34-File
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P35-Village(OOP)", "P35-Village(OOP)\P35-Village(OOP).csproj", "{3B8985DA-4F18-41D2-AE47-E9B066634DE5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P00-DZI_August_2024_01", "P00-DZI_August_2024_01\P00-DZI_August_2024_01.csproj", "{676F9BA5-BA3D-4AEA-9056-26F50E964ED6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P00-DZI_August_2024_01", "P00-DZI_August_2024_01\P00-DZI_August_2024_01.csproj", "{676F9BA5-BA3D-4AEA-9056-26F50E964ED6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P00-DZI_August_2024_02", "P00-DZI_August_2024_02\P00-DZI_August_2024_02.csproj", "{F02AF2A6-A37C-4215-A503-42064C0B70BC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -231,6 +233,10 @@ Global
 		{676F9BA5-BA3D-4AEA-9056-26F50E964ED6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{676F9BA5-BA3D-4AEA-9056-26F50E964ED6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{676F9BA5-BA3D-4AEA-9056-26F50E964ED6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F02AF2A6-A37C-4215-A503-42064C0B70BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F02AF2A6-A37C-4215-A503-42064C0B70BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F02AF2A6-A37C-4215-A503-42064C0B70BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F02AF2A6-A37C-4215-A503-42064C0B70BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
