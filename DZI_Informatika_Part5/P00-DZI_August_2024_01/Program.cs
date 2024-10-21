@@ -29,7 +29,7 @@ public class Program
 
 
 
-        Console.WriteLine($"Longest period with bigger profit is {longestPeriod} mounths.");
+       // Console.WriteLine($"Longest period with bigger profit is {longestPeriod} mounths.");
         Console.WriteLine($"Smaller with {lowestPercent:f2}%");
     }
 }
